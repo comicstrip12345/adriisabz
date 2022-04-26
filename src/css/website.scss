@@ -1,0 +1,232 @@
+$background-color: black;
+$text-color: white;
+$font-style-content: Quicksand;
+$font-style-heading: Poppins;
+
+@mixin headingStyle {
+    font-family: $font-style-heading;
+    font-weight: bold;
+    color: $text-color;
+}
+@mixin titleStyle {
+    font-family: $font-style-heading;
+    font-weight: bold;
+    font-size: 5vh;
+    color: $text-color;
+    margin-top: 10vh;
+    margin-bottom: 12vh;
+}
+
+section.websites{
+    .title{
+        h1{
+            @include titleStyle();
+            margin-top: 20vh;
+        }
+    }
+    .website-title{
+        margin-bottom: 10vh;
+
+        h1{
+            @include headingStyle();
+            font-size: 7.5vh;
+
+            a{
+                text-decoration: none;
+                color: $text-color;
+
+                &:hover{
+                    color: rgb(156, 156, 156);
+                }
+            }
+            .modal{
+                .modal-header{
+                    h5{
+                        color: black;
+                    }
+                    button.btn-close{
+                        height: 1vh;
+                        width: 1vh;
+                    }
+                }
+            }
+            p{
+                font-family: $font-style-content;
+                font-weight: 400;
+                font-size: 2.3vh;
+                color: $text-color;
+                padding-top: 1vh;
+            }
+
+            .progLang{
+                a.prog-lang{
+                    font-size: 2vh;
+                    font-weight: 400;
+                    border: solid 1px white;
+                    padding: 1.5vh;
+                    border-radius: 1vh;
+                    margin-right: 1.5vh;
+                }
+            }
+        }
+    }
+    .images{
+        margin-bottom: 10vh;
+
+        img{
+            width: 100vh;
+            height: 75vh;
+            float: right;
+        }
+        
+    }
+    .e-calc{
+        img{
+            width: 100vh;
+            float: right;
+        }
+    }
+    .website-title-sub{
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px){
+    section.websites{
+        .title{
+            h1{
+                margin-top: 16vh;
+                margin-bottom: 8vh;
+                text-align: center;
+            }
+        }
+        .website-title{
+            h1{
+                display: none;
+            }
+        }
+        .images,.e-calc{
+            display: none;
+        }
+        .website-title-sub{
+            display: block;
+
+            h1{
+                text-align: center;
+                font-size: 3.5vh;
+                font-family: $font-style-heading;
+                font-weight: bold;
+
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+                }
+            }
+            p{
+                font-family: $font-style-content;
+                font-weight: 400;
+                font-size: 1.7vh;
+                color: $text-color;
+                text-align: center;
+            }
+            p.progLang{
+                text-align: center;
+                font-size: 1.7vh;
+                margin-top: 4vh;
+
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+                    border: solid 1px white;
+                    padding: 1vh;
+                    border-radius: 1vh;
+                    margin-right: 1.5vh;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:576px) and (max-width:767px){
+    section.websites{
+        .images{
+            img{
+                width: 90vh;
+                height: 65vh;
+            }
+        }
+        .e-calc{
+            img{
+                width: 90vh;
+            }
+        }
+    }
+}
+@media screen and (min-width:768px) and (max-width:991px){
+    section.websites{
+        .title{
+            h1{
+                margin-top: 16vh;
+                margin-bottom: 8vh;
+                text-align: center;
+            }
+        }
+        .website-title{
+            h1{
+                display: none;
+            }
+        }
+        .images,.e-calc{
+            display: none;
+        }
+        .website-title-sub{
+            display: block;
+
+            h1{
+                text-align: center;
+                font-size: 3.5vh;
+                font-family: $font-style-heading;
+                font-weight: bold;
+
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+                }
+            }
+            p{
+                font-family: $font-style-content;
+                font-weight: 400;
+                font-size: 1.7vh;
+                color: $text-color;
+                text-align: center;
+            }
+            p.progLang{
+                text-align: center;
+                font-size: 2vh;
+                margin-top: 4vh;
+
+                a{
+                    text-decoration: none;
+                    color: $text-color;
+                    border: solid 1px white;
+                    padding: 1vh;
+                    border-radius: 1vh;
+                }
+            }
+        }
+    }
+}
+@media screen and (min-width:992px) and (max-width:1199px){
+    section.websites{
+        .images{
+            img{
+                width: 70vh;
+                height: 45vh;
+            }
+        }
+        .e-calc{
+            img{
+                width: 70vh;
+            }
+        }
+    }
+}

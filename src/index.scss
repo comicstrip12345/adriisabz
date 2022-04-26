@@ -1,0 +1,61 @@
+$background-color: black;
+$text-color: white;
+$font-style-content: Quicksand;
+$font-style-heading: Poppins;
+
+@mixin titleStyle {
+    font-family: $font-style-heading;
+    font-weight: bold;
+    font-size: 5vh;
+    color: $text-color;
+    margin-top: 10vh;
+    margin-bottom: 12vh;
+}
+@mixin textInputDesign {
+    margin-bottom: 3vh;
+    border: none;
+    border: 1px solid white;
+    background:none;
+    width: 70vh;
+    padding: 1.5vh;
+    color: $text-color;
+    font-family: $font-style-heading;
+}
+@mixin titleListsStyle{
+    font-family: $font-style-content;
+    text-decoration: none;
+    color: $text-color;
+    font-size: 2vh;
+    font-weight: 400;
+    border: solid 1px white;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    margin-right: 2vh;
+}
+
+body{
+    background-color: $background-color;
+    position: relative;
+}
+*{
+    box-sizing: border-box;
+}
+// #landscape{
+//     p{
+//         display: none;
+//     }     
+// }
+
+// @media only screen and (orientation:landscape){
+//     body{
+//         background-color: white;
+//     }
+//     #landscape{
+//         display: block;
+        
+        
+//     }
+//     #portrait{
+//         display: none;
+//     }
+// }

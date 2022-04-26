@@ -1,0 +1,187 @@
+section.websites .title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  margin-top: 20vh;
+}
+
+section.websites .website-title {
+  margin-bottom: 10vh;
+}
+
+section.websites .website-title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  color: white;
+  font-size: 7.5vh;
+}
+
+section.websites .website-title h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+section.websites .website-title h1 a:hover {
+  color: #9c9c9c;
+}
+
+section.websites .website-title h1 .modal .modal-header h5 {
+  color: black;
+}
+
+section.websites .website-title h1 .modal .modal-header button.btn-close {
+  height: 1vh;
+  width: 1vh;
+}
+
+section.websites .website-title h1 p {
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 2.3vh;
+  color: white;
+  padding-top: 1vh;
+}
+
+section.websites .website-title h1 .progLang a.prog-lang {
+  font-size: 2vh;
+  font-weight: 400;
+  border: solid 1px white;
+  padding: 1.5vh;
+  border-radius: 1vh;
+  margin-right: 1.5vh;
+}
+
+section.websites .images {
+  margin-bottom: 10vh;
+}
+
+section.websites .images img {
+  width: 100vh;
+  height: 75vh;
+  float: right;
+}
+
+section.websites .e-calc img {
+  width: 100vh;
+  float: right;
+}
+
+section.websites .website-title-sub {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  section.websites .title h1 {
+    margin-top: 16vh;
+    margin-bottom: 8vh;
+    text-align: center;
+  }
+  section.websites .website-title h1 {
+    display: none;
+  }
+  section.websites .images, section.websites .e-calc {
+    display: none;
+  }
+  section.websites .website-title-sub {
+    display: block;
+  }
+  section.websites .website-title-sub h1 {
+    text-align: center;
+    font-size: 3.5vh;
+    font-family: Poppins;
+    font-weight: bold;
+  }
+  section.websites .website-title-sub h1 a {
+    text-decoration: none;
+    color: white;
+  }
+  section.websites .website-title-sub p {
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 1.7vh;
+    color: white;
+    text-align: center;
+  }
+  section.websites .website-title-sub p.progLang {
+    text-align: center;
+    font-size: 1.7vh;
+    margin-top: 4vh;
+  }
+  section.websites .website-title-sub p.progLang a {
+    text-decoration: none;
+    color: white;
+    border: solid 1px white;
+    padding: 1vh;
+    border-radius: 1vh;
+    margin-right: 1.5vh;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section.websites .images img {
+    width: 90vh;
+    height: 65vh;
+  }
+  section.websites .e-calc img {
+    width: 90vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.websites .title h1 {
+    margin-top: 16vh;
+    margin-bottom: 8vh;
+    text-align: center;
+  }
+  section.websites .website-title h1 {
+    display: none;
+  }
+  section.websites .images, section.websites .e-calc {
+    display: none;
+  }
+  section.websites .website-title-sub {
+    display: block;
+  }
+  section.websites .website-title-sub h1 {
+    text-align: center;
+    font-size: 3.5vh;
+    font-family: Poppins;
+    font-weight: bold;
+  }
+  section.websites .website-title-sub h1 a {
+    text-decoration: none;
+    color: white;
+  }
+  section.websites .website-title-sub p {
+    font-family: Quicksand;
+    font-weight: 400;
+    font-size: 1.7vh;
+    color: white;
+    text-align: center;
+  }
+  section.websites .website-title-sub p.progLang {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 4vh;
+  }
+  section.websites .website-title-sub p.progLang a {
+    text-decoration: none;
+    color: white;
+    border: solid 1px white;
+    padding: 1vh;
+    border-radius: 1vh;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section.websites .images img {
+    width: 70vh;
+    height: 45vh;
+  }
+  section.websites .e-calc img {
+    width: 70vh;
+  }
+}

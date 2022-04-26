@@ -1,0 +1,204 @@
+$text-color: white;
+$font-style-content: Quicksand;
+$font-style-heading: Poppins;
+
+section.hero{
+    margin-top: 15vh;
+
+    .title,.title-sub{
+        h1{
+            font-family: $font-style-heading;
+            font-weight: bold;
+            font-size: 7.5vh;
+            color: $text-color;
+            margin-top: 20vh;
+        }
+        p{
+            font-family: $font-style-content;
+            color: $text-color;
+        }
+        p.skill,p.nickname{
+            font-size: 3vh;
+        }
+        .buttons{
+            margin-top: 8vh;
+            button{
+                margin-right: 2vh;
+                padding: 2vh;
+                width: 17vh;
+                color: $text-color;
+                background:none;
+                border: 1px solid white;
+                border-radius: 1vh;
+                font-family: $font-style-content;
+                font-weight: bold;
+            }
+            button.resume{
+                margin-right: 0;
+            }
+        }
+    }
+    .image{
+        img{
+            height: 83vh;
+        }
+    }
+    .socmed{
+        img{
+            height: 3.5vh;
+            margin-right: 4vh;
+        }
+        img.linkedin{
+            margin-right: 0;
+        }
+    }
+    .title-sub{
+        display: none;
+    }
+}
+
+@media screen and (max-width:575px){
+    section.hero{
+        .title{
+            display: none;
+        }
+        .title-sub{
+            display: block;
+
+            h1{
+                margin-top: 0;
+                font-size: 4.5vh;
+            }
+            p.skill{
+                font-size: 2.3vh;
+            }
+            .buttons{
+                margin-top: 4vh;
+
+                button{
+                    width: 14vh;
+                    padding: 1vh;
+                }
+            }
+        }
+        .image{
+            img{
+                height: 50vh;
+                width: 100%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px){
+    section.hero{
+        margin-top: 20vh;
+        .title{
+            h1{
+                font-size: 6.5vh;
+                margin-top: 17vh;
+                margin-bottom: 1.5vh;
+            }
+            p.skill{
+                margin-bottom: 1.5vh;
+                font-size: 2.6vh;
+            }
+            .buttons{
+                margin-top: 5vh;
+
+                button{
+                    padding: 1vh;
+                    width: 15vh;
+                    font-size: 2.5vh;
+                }
+            }
+                
+        }
+        .image{
+            img{
+                height: 70vh;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    section.hero{
+        .title{
+            display: none;
+        }
+        .title-sub{
+            display: block;
+
+            h1{
+                margin-top: 0;
+                font-size: 5.5vh;
+            }
+            p.skill{
+                font-size: 2.6vh;
+            }
+            .buttons{
+                margin-top: 4vh;
+
+                button{
+                    width: 14vh;
+                    padding: 1vh;
+                    font-size: 2.5vh;
+                }
+            }
+        }
+        .image{
+            img{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                height: 50vh;
+                width: 70%;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    section.hero{
+        margin-top: 20vh;
+        .title{
+            z-index: 1;
+            h1{
+                font-size:5vh;
+                margin-top: 17vh;
+            }
+            p.skill{
+                margin-bottom: 2vh;
+                font-size: 2.5vh;
+            }
+            .buttons{
+                margin-top: 5vh;
+
+                button{
+                    padding: 1vh;
+                    width: 15vh;
+                    font-size: 2.5vh;
+                }
+            }
+                
+        }
+        .image{
+            img{
+                height: 70vh;
+                float: right;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:1200px){
+    section.hero{
+        .image{
+            img{
+                float: right;
+            }
+        }
+        
+    }
+}
