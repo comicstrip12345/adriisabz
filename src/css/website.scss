@@ -16,6 +16,23 @@ $font-style-heading: Poppins;
     margin-top: 10vh;
     margin-bottom: 12vh;
 }
+@mixin contentStyle {
+    font-family: $font-style-content;
+    font-weight: 400;
+    color: $text-color;
+}
+@mixin centerImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h1{
+    @include headingStyle();
+}
+p{
+    @include contentStyle();
+}
 
 section.websites{
     .title{
@@ -28,7 +45,6 @@ section.websites{
         margin-bottom: 10vh;
 
         h1{
-            @include headingStyle();
             font-size: 7.5vh;
 
             a{
@@ -39,29 +55,16 @@ section.websites{
                     color: rgb(156, 156, 156);
                 }
             }
-            .modal{
-                .modal-header{
-                    h5{
-                        color: black;
-                    }
-                    button.btn-close{
-                        height: 1vh;
-                        width: 1vh;
-                    }
+            .releaseDate{
+                p{
+                    font-size: 2.3vh;
+                    padding-top: 1vh;
                 }
             }
-            p{
-                font-family: $font-style-content;
-                font-weight: 400;
-                font-size: 2.3vh;
-                color: $text-color;
-                padding-top: 1vh;
-            }
-
             .progLang{
                 a.prog-lang{
+                    @include contentStyle();
                     font-size: 2vh;
-                    font-weight: 400;
                     border: solid 1px white;
                     padding: 1.5vh;
                     border-radius: 1vh;
@@ -69,6 +72,50 @@ section.websites{
                 }
             }
         }
+    }
+    .modal{
+        .modal-dialog{
+            .modal-content{
+                background-color: black;
+                border: 1px solid white;
+            }
+            .modal-header{
+                border: none;
+                
+                button{
+                    border: none;
+                    background-color: transparent;
+                    color: white;
+                    height: 5vh;
+                    font-size: 4vh;
+                }
+            }
+            .modal-body{
+                h1{
+                    font-size: 6vh;
+                    margin: 0;
+                }
+                p.relDate{
+                    padding: 0;
+                    font-size: 2vh;
+                }
+                p.content{
+                    font-size: 2.4vh;
+                    line-height: 4.5vh;
+                }
+                img{
+                    @include centerImage();
+                    height: 50vh;
+                }
+            }
+            .modal-footer{
+                button{
+                    background: none;
+                    border: 1px solid white;
+                }
+            }
+        }
+        
     }
     .images{
         margin-bottom: 10vh;
@@ -80,13 +127,16 @@ section.websites{
         }
         
     }
+    .images-sub,.images-tab{
+        display: none;
+    }
     .e-calc{
         img{
             width: 100vh;
             float: right;
         }
     }
-    .website-title-sub{
+    .website-title-sub, .website-title-tab{
         display: none;
     }
 }
@@ -101,6 +151,8 @@ section.websites{
             }
         }
         .website-title{
+            margin-bottom: 0;
+
             h1{
                 display: none;
             }
@@ -108,14 +160,21 @@ section.websites{
         .images,.e-calc{
             display: none;
         }
+        .images-sub{
+            display: block;
+
+            img{
+                height: 30vh;
+                @include centerImage();
+                margin-bottom: 5vh;
+            }
+        }
         .website-title-sub{
             display: block;
 
             h1{
                 text-align: center;
                 font-size: 3.5vh;
-                font-family: $font-style-heading;
-                font-weight: bold;
 
                 a{
                     text-decoration: none;
@@ -123,16 +182,13 @@ section.websites{
                 }
             }
             p{
-                font-family: $font-style-content;
-                font-weight: 400;
                 font-size: 1.7vh;
-                color: $text-color;
                 text-align: center;
             }
             p.progLang{
                 text-align: center;
-                font-size: 1.7vh;
                 margin-top: 4vh;
+                margin-bottom: 10vh;
 
                 a{
                     text-decoration: none;
@@ -143,6 +199,37 @@ section.websites{
                     margin-right: 1.5vh;
                 }
             }
+        }
+        .modal{
+            .modal-dialog{
+                .modal-body{
+                    h1{
+                        font-size: 3vh;
+                        margin: 0;
+                    }
+                    p.relDate{
+                        padding: 0;
+                        font-size: 2vh;
+                    }
+                    p.content{
+                        @include centerImage();
+                        font-size: 2.3vh;
+                        text-align: center;
+                        width:40vh;
+                    }
+                    img{
+                        @include centerImage();
+                        height: 38vh;
+                        margin-bottom: 5vh;
+                    }
+                }
+                .modal-footer{
+                    .buttons{
+                        @include centerImage();
+                    }
+                }
+            }
+            
         }
     }
 }
@@ -159,7 +246,28 @@ section.websites{
                 width: 90vh;
             }
         }
+        .modal{
+            .modal-dialog{
+                .modal-body{
+                    img{
+                        height: 40vh;
+                    }
+                }
+                .modal-footer{
+                    .buttons{
+                        a{
+                            button{
+                                height: 8vh;
+                                font-size: 3vh;
+                            }
+                        }
+                    }
+                }
+            }
+            
+        }
     }
+    
 }
 @media screen and (min-width:768px) and (max-width:991px){
     section.websites{
@@ -171,6 +279,7 @@ section.websites{
             }
         }
         .website-title{
+            margin-bottom: 0;
             h1{
                 display: none;
             }
@@ -178,7 +287,16 @@ section.websites{
         .images,.e-calc{
             display: none;
         }
-        .website-title-sub{
+        .images-tab{
+            display: block;
+
+            img{
+                @include centerImage();
+                height: 50vh;
+                margin-bottom: 5vh;
+            }
+        }
+        .website-title-tab{
             display: block;
 
             h1{
@@ -203,6 +321,7 @@ section.websites{
                 text-align: center;
                 font-size: 2vh;
                 margin-top: 4vh;
+                margin-bottom: 10vh;
 
                 a{
                     text-decoration: none;
@@ -210,8 +329,40 @@ section.websites{
                     border: solid 1px white;
                     padding: 1vh;
                     border-radius: 1vh;
+                    margin-right: 1.5vh;
                 }
             }
+        }
+        .modal{
+            .modal-dialog{
+                .modal-body{
+                    h1{
+                        font-size: 3vh;
+                        margin: 0;
+                    }
+                    p.relDate{
+                        padding: 0;
+                        font-size: 2vh;
+                    }
+                    p.content{
+                        @include centerImage();
+                        font-size: 2.3vh;
+                        text-align: center;
+                        width:40vh;
+                    }
+                    img{
+                        @include centerImage();
+                        height: 38vh;
+                        margin-bottom: 5vh;
+                    }
+                }
+                .modal-footer{
+                    .buttons{
+                        @include centerImage();
+                    }
+                }
+            }
+            
         }
     }
 }
@@ -226,6 +377,15 @@ section.websites{
         .e-calc{
             img{
                 width: 70vh;
+            }
+        }
+        .modal{
+            .modal-dialog{
+                .modal-body{
+                    img{
+                        height: 32vh;
+                    }
+                }
             }
         }
     }
