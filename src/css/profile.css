@@ -1,0 +1,170 @@
+section.about-hero .title h1, section.about-hero .title-sub h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 7.5vh;
+  color: white;
+  margin-top: 22vh;
+}
+
+section.about-hero .title p, section.about-hero .title-sub p {
+  font-family: Quicksand;
+  color: white;
+}
+
+section.about-hero .title p.nickname, section.about-hero .title-sub p.nickname {
+  font-size: 3vh;
+  font-weight: 700;
+}
+
+section.about-hero .title p.content, section.about-hero .title-sub p.content {
+  font-size: 2.3vh;
+  line-height: 4vh;
+}
+
+section.about-hero .title .buttons-about, section.about-hero .title-sub .buttons-about {
+  margin-top: 5vh;
+}
+
+section.about-hero .title .buttons-about button, section.about-hero .title-sub .buttons-about button {
+  margin-right: 2vh;
+  padding: 2vh;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 1vh;
+  font-family: Quicksand;
+}
+
+section.about-hero .title .buttons-about button strong, section.about-hero .title-sub .buttons-about button strong {
+  font-family: Poppins;
+  margin-right: 0.5vh;
+}
+
+section.about-hero .image {
+  margin-top: 15vh;
+}
+
+section.about-hero .image img {
+  height: 83vh;
+}
+
+section.about-hero .title-sub {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  section.about-hero .title {
+    display: none;
+  }
+  section.about-hero .title-sub {
+    display: block;
+  }
+  section.about-hero .title-sub h1 {
+    margin-top: 0vh;
+    font-size: 5.5vh;
+  }
+  section.about-hero .title-sub p.content {
+    width: 50vh;
+    line-height: 4.5vh;
+    font-size: 2.3vh;
+  }
+  section.about-hero .title-sub .buttons-about button {
+    margin-bottom: 2vh;
+    margin-right: 0;
+  }
+  section.about-hero .image img {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section.about-hero .title h1 {
+    margin-top: 20vh;
+  }
+  section.about-hero .buttons-about {
+    margin-top: 5vh;
+  }
+  section.about-hero .buttons-about button {
+    margin-right: 2vh;
+    padding: 2vh;
+    font-size: 2.5vh;
+  }
+  section.about-hero .image img {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.about-hero .title {
+    display: none;
+  }
+  section.about-hero .title-sub {
+    display: block;
+  }
+  section.about-hero .title-sub h1 {
+    margin-top: 0vh;
+    font-size: 5.5vh;
+  }
+  section.about-hero .title-sub p.content {
+    width: 60vh;
+    line-height: 4.5vh;
+    font-size: 2.3vh;
+  }
+  section.about-hero .title-sub .buttons-about button {
+    margin-bottom: 2vh;
+    margin-right: 0;
+    font-size: 3vh;
+  }
+  section.about-hero .image {
+    width: 100%;
+  }
+  section.about-hero .image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section.about-hero .image img {
+    float: right;
+    height: 64vh;
+  }
+  section.about-hero .title h1 {
+    font-size: 5.5vh;
+    color: white;
+    margin-top: 20vh;
+  }
+  section.about-hero .title p.nickname {
+    font-size: 2.5vh;
+  }
+  section.about-hero .title p.content {
+    font-size: 2vh;
+  }
+  section.about-hero .title .buttons-about {
+    margin-top: 5vh;
+    width: 100vh;
+  }
+  section.about-hero .title .buttons-about button {
+    margin-right: 2vh;
+    padding: 2vh;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    border-radius: 1vh;
+    font-family: Quicksand;
+  }
+  section.about-hero .title .buttons-about button strong {
+    font-family: Poppins;
+    margin-right: 0.5vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.about-hero .image img {
+    float: right;
+  }
+}

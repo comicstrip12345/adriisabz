@@ -1,0 +1,152 @@
+$text-color: white;
+$font-style-content: Quicksand;
+$font-style-heading: Poppins;
+
+@mixin titleStyle {
+    font-family: $font-style-heading;
+    font-weight: bold;
+    font-size: 5vh;
+    color: $text-color;
+    margin-top: 10vh;
+    margin-bottom: 12vh;
+}
+@mixin headingStyle {
+    font-family: $font-style-heading;
+    font-weight: bold;
+    color: $text-color;
+}
+@mixin titleListsStyle{
+    font-family: $font-style-content;
+    text-decoration: none;
+    color: $text-color;
+    font-size: 2vh;
+    font-weight: 400;
+    border: solid 1px white;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    margin-right: 2vh;
+}
+
+
+section.hobbies-cert{
+    .hobbies{
+        h1{
+            @include titleStyle();
+            margin-bottom: 5vh;
+        }
+        p{
+            a{
+                @include titleListsStyle();
+            }
+        }
+    }
+    .cert{
+        .title{
+            h1{
+                @include titleStyle();
+                margin-bottom: 5vh;
+            }
+        }
+        .cert-date{
+            h1{
+                font-size: 2.5vh;
+                font-family: $font-style-heading;
+                font-weight: 500;
+                color: $text-color;
+            }
+        }
+        .cert-place{
+            h1{
+                font-size: 3.5vh;
+                font-family: $font-style-heading;
+                font-weight: bold;
+                color: $text-color;
+                margin-bottom: 1.5vh;
+            }
+            h1.cert-date{
+                display: none;
+            }
+
+            .cert-place-content{
+                p{
+                    font-family: $font-style-content;
+                    color: $text-color;
+                    font-size: 2.3vh;
+                    margin: 0;
+                }
+                a{
+                    @include titleListsStyle();
+                }
+
+                &.a{
+                    margin-top: 3vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px){
+    section.hobbies-cert{
+        .hobbies{
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
+
+                a.biking,a.watch,a.games{
+                    margin-right: 0;
+                }
+            }
+        }
+        .cert{
+            .title{
+                h1{
+                    text-align: center;
+                    margin-bottom: 12vh;
+                }
+            }
+            .cert-date{
+                h1{
+                    display: none;
+                }
+            }
+            .cert-place{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 53vh;
+
+                h1.cert-date{
+                    display: block;
+                    font-weight: 400;
+                    font-size: 2.6vh;
+                    margin-bottom: 2.5vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px){
+    section.hobbies-cert{
+        .hobbies{
+            p{
+                line-height: 3.5vh;
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    
+}
+
+@media screen and (min-width:1200px){
+
+}

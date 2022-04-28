@@ -1,0 +1,236 @@
+$text-color: white;
+$font-style-content: Quicksand;
+$font-style-heading: Poppins;
+
+@mixin titleStyle {
+    font-family: $font-style-heading;
+    font-weight: bold;
+    font-size: 5vh;
+    color: $text-color;
+    margin-top: 10vh;
+    margin-bottom: 12vh;
+}
+@mixin headingStyle {
+    font-family: $font-style-heading;
+    font-weight: bold;
+    color: $text-color;
+}
+@mixin titleListsStyle{
+    font-family: $font-style-content;
+    text-decoration: none;
+    color: $text-color;
+    font-size: 2vh;
+    font-weight: 400;
+    border: solid 1px white;
+    padding: 1.5vh;
+    border-radius: 1vh;
+    margin-right: 2vh;
+}
+
+section.skill-exp{
+    .skills{
+        .title{
+            h1{
+                @include titleStyle();
+            }
+        }
+        .skill-title{
+            margin-bottom: 5vh;
+
+            h1{
+                font-size: 3.5vh;
+                font-family: $font-style-heading;
+                font-weight: bold;
+                color: $text-color;
+                margin: 0;
+            }
+        }
+        .tools{
+            a{
+                @include titleListsStyle();
+            }
+            a.mcss,a.js,a.figma,a.git{
+                margin-right: 0;
+            }
+        }
+        .des,.ver{
+            margin-top: 10vh;
+        }
+    }
+    .exp{
+        .title{
+            h1{
+                @include titleStyle();
+            }
+        }
+        .exp-date{
+            display: none;
+            margin-bottom: 7vh;
+
+            h1{
+                font-size: 2.5vh;
+                font-family: $font-style-heading;
+                font-weight: 500;
+                color: $text-color;
+            }
+        }
+        .exp-place{
+            margin-bottom: 7vh;
+
+            h1{
+                font-size: 3.5vh;
+                font-family: $font-style-heading;
+                font-weight: bold;
+                color: $text-color;
+                margin-bottom: 1.5vh;
+            }
+
+            .exp-place-content{
+                margin-bottom: 2.5vh;
+                p{
+                    font-family: $font-style-content;
+                    color: $text-color;
+                    font-size: 2.3vh;
+                    margin: 0;
+                }
+                a{
+                    color: $text-color;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (max-width:575px){
+    section.skill-exp{
+        .skills{
+            .title,.skill-title{
+                h1{
+                    text-align: center;
+                }
+            }
+            .tools{
+                p{
+                    text-align: center;
+                }
+            }
+        }
+        .exp{
+            .title{
+                h1{
+                    text-align: center;
+                }
+            }
+            .exp-date{
+                margin-bottom: 0;
+                
+                h1{
+                    display: none;
+                }
+            }
+            .exp-place{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 53vh;
+                margin-bottom: 0;
+                &.kodego{
+                    margin-bottom: 5vh;
+                }
+                
+                h1.exp-date{
+                    display: block;
+                    font-weight: 400;
+                    font-size: 2.6vh;
+                    margin-bottom: 2.5vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:576px) and (max-width:767px){
+    section.skill-exp{
+        .skills{
+            .title{
+                h1{
+                    margin-top: 20vh;
+                }
+            }
+            .tools{
+                p{
+                    line-height: 3.5vh;
+                
+                }
+            }
+        }
+        .exp{
+            .title{
+                h1{
+                    margin-top: 20vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:768px) and (max-width:991px){
+    section.skill-exp{
+        .skills{
+            .title,.skill-title{
+                h1{
+                    text-align: center;
+                }
+            }
+            .tools{
+                p{
+                    text-align: center;
+                }
+                span{
+                    margin-top: 90vh;
+                }
+            }
+        }
+        .exp{
+            .title{
+                h1{
+                    text-align: center;
+                }
+            }
+            .exp-date{
+                margin-bottom: 0;
+                
+                h1{
+                    display: none;
+                }
+            }
+            .exp-place{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                width: 65vh;
+                margin-bottom: 0;
+                &.kodego{
+                    margin-bottom: 5vh;
+                }
+                
+                h1.exp-date{
+                    display: block;
+                    font-weight: 400;
+                    font-size: 2.6vh;
+                    margin-bottom: 2.5vh;
+                }
+            }
+        }
+    }
+}
+
+@media screen and (min-width:992px) and (max-width:1199px){
+    section.skill-exp{
+        margin-top: 5vh;
+    }
+}
+
+@media screen and (min-width:1200px){
+
+}

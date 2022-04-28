@@ -1,0 +1,110 @@
+section.hobbies-cert .hobbies h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  margin-bottom: 5vh;
+}
+
+section.hobbies-cert .hobbies p a {
+  font-family: Quicksand;
+  text-decoration: none;
+  color: white;
+  font-size: 2vh;
+  font-weight: 400;
+  border: solid 1px white;
+  padding: 1.5vh;
+  border-radius: 1vh;
+  margin-right: 2vh;
+}
+
+section.hobbies-cert .cert .title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  margin-bottom: 5vh;
+}
+
+section.hobbies-cert .cert .cert-date h1 {
+  font-size: 2.5vh;
+  font-family: Poppins;
+  font-weight: 500;
+  color: white;
+}
+
+section.hobbies-cert .cert .cert-place h1 {
+  font-size: 3.5vh;
+  font-family: Poppins;
+  font-weight: bold;
+  color: white;
+  margin-bottom: 1.5vh;
+}
+
+section.hobbies-cert .cert .cert-place h1.cert-date {
+  display: none;
+}
+
+section.hobbies-cert .cert .cert-place .cert-place-content p {
+  font-family: Quicksand;
+  color: white;
+  font-size: 2.3vh;
+  margin: 0;
+}
+
+section.hobbies-cert .cert .cert-place .cert-place-content a {
+  font-family: Quicksand;
+  text-decoration: none;
+  color: white;
+  font-size: 2vh;
+  font-weight: 400;
+  border: solid 1px white;
+  padding: 1.5vh;
+  border-radius: 1vh;
+  margin-right: 2vh;
+}
+
+section.hobbies-cert .cert .cert-place .cert-place-content.a {
+  margin-top: 3vh;
+}
+
+@media screen and (max-width: 575px) {
+  section.hobbies-cert .hobbies h1 {
+    text-align: center;
+  }
+  section.hobbies-cert .hobbies p {
+    text-align: center;
+  }
+  section.hobbies-cert .hobbies p a.biking, section.hobbies-cert .hobbies p a.watch, section.hobbies-cert .hobbies p a.games {
+    margin-right: 0;
+  }
+  section.hobbies-cert .cert .title h1 {
+    text-align: center;
+    margin-bottom: 12vh;
+  }
+  section.hobbies-cert .cert .cert-date h1 {
+    display: none;
+  }
+  section.hobbies-cert .cert .cert-place {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 53vh;
+  }
+  section.hobbies-cert .cert .cert-place h1.cert-date {
+    display: block;
+    font-weight: 400;
+    font-size: 2.6vh;
+    margin-bottom: 2.5vh;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section.hobbies-cert .hobbies p {
+    line-height: 3.5vh;
+  }
+}
