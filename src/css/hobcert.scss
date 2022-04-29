@@ -26,6 +26,11 @@ $font-style-heading: Poppins;
     border-radius: 1vh;
     margin-right: 2vh;
 }
+@mixin centerImage{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 section.hobbies-cert{
@@ -82,6 +87,44 @@ section.hobbies-cert{
                     margin-top: 3vh;
                 }
             }
+            .modal{
+                .modal-dialog{
+                    .modal-content{
+                        background-color: black;
+                        border: 1px solid white;
+                    }
+                    .modal-header{
+                        border: none;
+                        
+                        button{
+                            border: none;
+                            background-color: transparent;
+                            color: white;
+                            height: 5vh;
+                            font-size: 4vh;
+                        }
+                    }
+                    .modal-body{
+                        h1{
+                            font-size: 6vh;
+                            margin: 0;
+                        }
+                        p.relDate{
+                            padding: 0;
+                            font-size: 2vh;
+                        }
+                        p.content{
+                            font-size: 2.4vh;
+                            line-height: 4.5vh;
+                        }
+                        img{
+                            @include centerImage();
+                            height: 60vh;
+                        }
+                    }
+                }
+                
+            }
         }
     }
 }
@@ -124,6 +167,15 @@ section.hobbies-cert{
                     font-size: 2.6vh;
                     margin-bottom: 2.5vh;
                 }
+                .modal{
+                    .modal-dialog{
+                        .modal-body{
+                            img{
+                                height: 30vh;
+                            }
+                        }
+                    }
+                }
             }
         }
     }
@@ -140,7 +192,36 @@ section.hobbies-cert{
 }
 
 @media screen and (min-width:768px) and (max-width:991px){
+    section.hobbies-cert{
+        .hobbies{
+            h1{
+                text-align: center;
+            }
+            p{
+                text-align: center;
 
+                a.biking,a.watch,a.games{
+                    margin-right: 0;
+                }
+            }
+        }
+        .cert{
+            h1{
+                text-align: center;
+            }
+            .cert-place{
+                .modal{
+                    .modal-dialog{
+                        .modal-body{
+                            img{
+                                height: 30vh;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
 }
 
 @media screen and (min-width:992px) and (max-width:1199px){

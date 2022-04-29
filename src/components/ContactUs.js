@@ -6,7 +6,7 @@ const ContactUs = () => {
         <section className="contact-us">
             <div className="container">
                 <div className="row">
-                    <div className='col-sm-5 col-lg-5 col-xl-6 content'>
+                    <div className='col-sm-5 col-md-12 col-lg-5 col-xl-6 content'>
                         <div className="col-12 title">
                             <h1>Keep in touch</h1>
                         </div>

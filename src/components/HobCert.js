@@ -1,5 +1,6 @@
 import React from 'react'
 import '../css/hobcert.css'
+import ModalCert from './ModalCert'
 
 const HobCert = () => {
     return (
@@ -44,7 +45,11 @@ const HobCert = () => {
                                         <p>Swiss IT Academy</p>
                                     </div>
                                     <div className="col-12 cert-place-content a" >
-                                        <a href="/#">Click to view</a>
+                                        <a href="/#" type="button" data-bs-toggle="modal" data-bs-target="#tesdaCert">Click to view</a>
+                                        <ModalCert
+                                            id="tesdaCert" 
+                                            img={require('../images/tesda-cert.PNG')}
+                                        />
                                     </div>
                                 </div>
                             </div>
