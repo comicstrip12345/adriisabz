@@ -50,6 +50,14 @@ section.contact-us .form button {
   font-weight: bold;
 }
 
+section.contact-us .image img {
+  height: 80vh;
+  margin-top: 40vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
 @media screen and (max-width: 575px) {
   section.contact-us .title h1 {
     margin-top: 16vh;
@@ -67,11 +75,21 @@ section.contact-us .form button {
   section.contact-us .form button {
     width: 20%;
   }
+  section.contact-us .image {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 576px) and (max-width: 767px) {
+  section.contact-us .form input, section.contact-us .form textarea {
+    width: 100%;
+  }
   section.contact-us .form button.send {
     font-size: 3vh;
+  }
+  section.contact-us .image img {
+    margin-top: 50vh;
+    height: 80vh;
   }
 }
 
@@ -93,10 +111,20 @@ section.contact-us .form button {
     font-size: 2.5vh;
     width: 20%;
   }
+  section.contact-us .image {
+    display: none;
+  }
 }
 
 @media screen and (min-width: 992px) and (max-width: 1199px) {
   section.contact-us .form button.send {
     font-size: 3vh;
+  }
+  section.contact-us .form input, section.contact-us .form textarea {
+    width: 100%;
+  }
+  section.contact-us .image img {
+    margin-top: 40vh;
+    height: 70vh;
   }
 }

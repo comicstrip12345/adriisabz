@@ -55,6 +55,15 @@ section.contact-us{
             font-weight: bold
         }
     }
+    .image{
+        img{
+            height: 80vh;
+            margin-top: 40vh;
+            display: block;
+            margin-left: auto;
+            margin-right: auto;
+        }
+    }
 }
 
 @media screen and (max-width:575px){
@@ -79,14 +88,26 @@ section.contact-us{
                 width: 20%;
             }
         }
+        .image{
+            display: none;
+        }
     }
 }
 
 @media screen and (min-width:576px) and (max-width:767px){
     section.contact-us{
         .form{
+            input,textarea{
+                width: 100%;
+            }
             button.send{
                 font-size: 3vh;
+            }
+        }
+        .image{
+            img{
+                margin-top: 50vh;
+                height: 80vh;
             }
         }
     }
@@ -115,6 +136,9 @@ section.contact-us{
                 width: 20%;
             }
         }
+        .image{
+            display: none;
+        }
     }
 }
 
@@ -123,6 +147,16 @@ section.contact-us{
         .form{
             button.send{
                 font-size: 3vh;
+            }
+            input,textarea{
+                width: 100%;
+            }
+            
+        }
+        .image{
+            img{
+                margin-top: 40vh;
+                height: 70vh;
             }
         }
     }
