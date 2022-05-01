@@ -1,14 +1,64 @@
-footer .copyright {
-  border-top: 1px solid white;
+footer {
   margin-top: 20vh;
 }
 
-footer .copyright p {
+footer .row {
+  border-top: 1px solid white;
+}
+
+footer .row .copyright p {
   color: white;
-  font-family: Poppins;
-  font-size: 1.5vh;
+  font-family: Quicksand;
   font-weight: 400;
+  font-size: 1.5vh;
   padding-top: 2vh;
+}
+
+footer .row .version a {
+  color: white;
+  font-family: Quicksand;
+  font-weight: 400;
+  font-size: 1.5vh;
+  padding-top: 2vh;
+  float: right;
+  text-decoration: none;
+}
+
+footer .row .version .modal .modal-dialog .modal-content {
+  background-color: black;
+  border: 1px solid white;
+}
+
+footer .row .version .modal .modal-dialog .modal-header button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  height: 5vh;
+  font-size: 3vh;
+}
+
+footer .row .version .modal .modal-dialog .modal-body .row {
+  border: none;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+footer .row .version .modal .modal-dialog .modal-body .row h2 {
+  font-family: Poppins;
+  color: white;
+  font-size: 4vh;
+}
+
+footer .row .version .modal .modal-dialog .modal-body .row h3 {
+  font-family: Poppins;
+  color: white;
+  font-size: 2.5vh;
+}
+
+footer .row .version .modal .modal-dialog .modal-body .row h3 span {
+  color: white;
+  font-family: Quicksand;
+  font-weight: 400;
 }
 
 @media screen and (max-width: 575px) {

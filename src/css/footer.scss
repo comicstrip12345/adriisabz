@@ -1,18 +1,82 @@
 $text-color: white;
+$font-style-content: Quicksand;
 $font-style-heading: Poppins;
 
+@mixin footerContentStyle {
+    @include contentFontStyle();
+    font-size: 1.5vh;
+    padding-top: 2vh;
+}
+@mixin headerFontStyle {
+    font-family: $font-style-heading;
+    color: $text-color;
+}
+@mixin contentFontStyle {
+    color: $text-color;
+    font-family: $font-style-content;
+    font-weight: 400;
+}
+
 footer{
-    .copyright{
+    margin-top: 20vh;
+
+    .row{
         border-top: 1px solid white;
-        margin-top: 20vh;
-        p{
-            color: $text-color;
-            font-family: $font-style-heading;
-            font-size: 1.5vh;
-            font-weight: 400;
-            padding-top: 2vh;
+
+        .copyright{
+            p{
+                @include footerContentStyle();
+            }
         }
+        .version{
+            a{
+                @include footerContentStyle();
+                float: right;
+                text-decoration: none;
+            }
+
+            .modal{
+                .modal-dialog{
+                    .modal-content{
+                        background-color: black;
+                        border: 1px solid white;
+                    }
+                    .modal-header{
+                        button{
+                            border: none;
+                            background-color: transparent;
+                            color: white;
+                            height: 5vh;
+                            font-size: 3vh;
+                        }
+                    }   
+                    .modal-body{
+                        .row{
+                            border: none;
+                            margin-top: 3vh;
+                            margin-bottom: 3vh;
+
+                            h2{
+                                @include headerFontStyle();
+                                font-size: 4vh;
+                            }
+                            h3{
+                                @include headerFontStyle();
+                                font-size: 2.5vh;
+    
+                                span{
+                                    @include contentFontStyle();
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+
     }
+
+    
 }
 
 @media screen and (max-width:575px){
