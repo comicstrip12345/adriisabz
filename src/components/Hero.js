@@ -27,7 +27,7 @@ const Hero = () => {
                 <div className="col-12 col-xl-6 title-sub">
                     <center>
                         <h1>Adriano Sabanal Jr.</h1>
-                        <p className="skill">Front-end Web Developer Web Designer</p>
+                        <p className="skill">Front-end Web Developer and Web Designer</p>
                         <div className="col-12 socmed">
                             <a href="#/"><img src={require("../images/socmed/facebook.png")} alt="fb"/></a>
                             <a href="#/"><img src={require("../images/socmed/twitter.png")} alt="twitter"/></a>
