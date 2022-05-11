@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # adriisabz v.2.1.0
 **Released Date:** May 11, 2022 \
 **Author:** Adriano Sabanal Jr. \
@@ -8,6 +9,8 @@
 **4.** Added hover animation to all buttons and hyperlinks\
 **5.** Changed Grammar to all website description
 
+=======
+>>>>>>> 03f34df0c11bee8e8316a6f8799ab9264a8f60fa
 # adriisabz v.2.0.2
 **Released Date:** May 1, 2022 \
 **Author:** Adriano Sabanal Jr. \
