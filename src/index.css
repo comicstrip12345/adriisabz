@@ -6,3 +6,1393 @@ body {
 * {
   box-sizing: border-box;
 }
+
+a {
+  text-decoration: none;
+  color: white;
+}
+
+h1 {
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+}
+
+p {
+  font-family: Quicksand;
+  color: white;
+  font-weight: 400;
+}
+
+nav {
+  background-color: black;
+}
+
+nav .container {
+  border-bottom: solid 1px white;
+}
+
+nav h1 {
+  font-size: 3vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+  margin-bottom: 0;
+}
+
+nav h1 a {
+  transition: 0.3s ease-in-out;
+}
+
+nav h1 a:hover {
+  color: #9c9c9c;
+}
+
+nav nav.nav {
+  border-bottom: none;
+}
+
+nav nav.nav a {
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  font-size: 2vh;
+  transition: 0.3s ease-in-out;
+}
+
+nav nav.nav a:hover {
+  color: #9c9c9c;
+}
+
+@media screen and (max-width: 575px) {
+  nav h1 {
+    font-size: 2.5vh;
+  }
+  nav nav.nav a {
+    font-size: 1.5vh;
+  }
+}
+
+section.hero {
+  margin-top: 15vh;
+}
+
+section.hero .title h1, section.hero .title-sub h1 {
+  font-size: 7.5vh;
+  margin-top: 20vh;
+}
+
+section.hero .title p.skill, section.hero .title p.nickname, section.hero .title-sub p.skill, section.hero .title-sub p.nickname {
+  font-size: 3vh;
+}
+
+section.hero .title .buttons, section.hero .title-sub .buttons {
+  margin-top: 8vh;
+}
+
+section.hero .title .buttons button, section.hero .title-sub .buttons button {
+  padding: 2vh;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 1vh;
+  font-family: Quicksand;
+  font-weight: bold;
+  margin-right: 2vh;
+  width: 17vh;
+}
+
+section.hero .title .buttons button.resume, section.hero .title-sub .buttons button.resume {
+  margin-right: 0;
+}
+
+section.hero .image img {
+  height: 83vh;
+}
+
+section.hero .socmed img {
+  height: 3.5vh;
+  margin-right: 4vh;
+}
+
+section.hero .socmed img.linkedin {
+  margin-right: 0;
+}
+
+section.hero .title-sub {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  section.hero .title {
+    display: none;
+  }
+  section.hero .title-sub {
+    display: block;
+  }
+  section.hero .title-sub h1 {
+    margin-top: 0;
+    font-size: 4.5vh;
+  }
+  section.hero .title-sub p.skill {
+    font-size: 2.3vh;
+  }
+  section.hero .title-sub .buttons {
+    margin-top: 4vh;
+  }
+  section.hero .title-sub .buttons button {
+    width: 14vh;
+    padding: 1vh;
+  }
+  section.hero .image img {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section.hero {
+    margin-top: 20vh;
+  }
+  section.hero .title h1 {
+    font-size: 6.5vh;
+    margin-top: 17vh;
+    margin-bottom: 1.5vh;
+  }
+  section.hero .title p.skill {
+    margin-bottom: 1.5vh;
+    font-size: 2.6vh;
+  }
+  section.hero .title .buttons {
+    margin-top: 5vh;
+  }
+  section.hero .title .buttons button {
+    padding: 1vh;
+    width: 15vh;
+    font-size: 2.5vh;
+  }
+  section.hero .image img {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.hero .title {
+    display: none;
+  }
+  section.hero .title-sub {
+    display: block;
+  }
+  section.hero .title-sub h1 {
+    margin-top: 0;
+    font-size: 5.5vh;
+  }
+  section.hero .title-sub p.skill {
+    font-size: 2.6vh;
+  }
+  section.hero .title-sub .buttons {
+    margin-top: 4vh;
+  }
+  section.hero .title-sub .buttons button {
+    width: 14vh;
+    padding: 1vh;
+    font-size: 2.5vh;
+  }
+  section.hero .image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section.hero {
+    margin-top: 20vh;
+  }
+  section.hero .title {
+    z-index: 1;
+  }
+  section.hero .title h1 {
+    font-size: 5vh;
+    margin-top: 17vh;
+  }
+  section.hero .title p.skill {
+    margin-bottom: 2vh;
+    font-size: 2.5vh;
+  }
+  section.hero .title .buttons {
+    margin-top: 5vh;
+  }
+  section.hero .title .buttons button {
+    padding: 1vh;
+    width: 15vh;
+    font-size: 2.5vh;
+  }
+  section.hero .image img {
+    height: 70vh;
+    float: right;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.hero .image img {
+    float: right;
+  }
+  section.hero .title .buttons button {
+    transition: 0.3s ease-in-out;
+  }
+  section.hero .title .buttons button:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+section.services .title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+}
+
+section.services .list-services img {
+  height: 20vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+section.services .list-services h1 {
+  font-size: 3vh;
+  margin-top: 5vh;
+  text-align: center;
+}
+
+section.services .list-services p {
+  font-size: 2.3vh;
+  margin-top: 3vh;
+  text-align: center;
+  width: 30vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 575px) {
+  section.services .title h1 {
+    margin-top: 16vh;
+    margin-bottom: 8vh;
+    text-align: center;
+  }
+  section.services .list-services img {
+    height: 12vh;
+    margin-top: 3vh;
+  }
+  section.services .list-services h1 {
+    margin-top: 3vh;
+    margin-bottom: 0vh;
+  }
+  section.services .list-services p {
+    font-size: 2.3vh;
+    margin-top: 1vh;
+    margin-bottom: 7vh;
+    width: 25vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.services .title h1 {
+    margin-top: 16vh;
+    margin-bottom: 8vh;
+    text-align: center;
+  }
+  section.services .list-services img {
+    height: 12vh;
+    margin-top: 3vh;
+  }
+  section.services .list-services h1 {
+    margin-top: 3vh;
+    margin-bottom: 0vh;
+  }
+  section.services .list-services p {
+    font-size: 2vh;
+    margin-top: 1vh;
+    margin-bottom: 7vh;
+    width: 25vh;
+  }
+}
+
+section.websites .title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  margin-top: 20vh;
+}
+
+section.websites .website-title {
+  margin-bottom: 10vh;
+}
+
+section.websites .website-title h1 {
+  font-size: 7.5vh;
+}
+
+section.websites .website-title h1 a {
+  transition: 0.3s ease-in-out;
+}
+
+section.websites .website-title h1 a:hover {
+  color: #9c9c9c;
+}
+
+section.websites .website-title h1 .releaseDate p {
+  font-size: 2.3vh;
+  padding-top: 1vh;
+}
+
+section.websites .website-title h1 .progLang a.prog-lang {
+  font-family: Quicksand;
+  color: white;
+  font-weight: 400;
+  font-size: 2vh;
+  border: solid 1px white;
+  padding: 1.5vh;
+  border-radius: 1vh;
+  margin-right: 1.5vh;
+}
+
+section.websites .modal .modal-dialog .modal-content {
+  background-color: black;
+  border: 1px solid white;
+}
+
+section.websites .modal .modal-dialog .modal-header {
+  border: none;
+}
+
+section.websites .modal .modal-dialog .modal-header button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  height: 5vh;
+  font-size: 4vh;
+}
+
+section.websites .modal .modal-dialog .modal-body h1 {
+  font-size: 6vh;
+  margin: 0;
+}
+
+section.websites .modal .modal-dialog .modal-body p.relDate {
+  padding: 0;
+  font-size: 2vh;
+}
+
+section.websites .modal .modal-dialog .modal-body p.content {
+  font-size: 2.4vh;
+  line-height: 4.5vh;
+}
+
+section.websites .modal .modal-dialog .modal-body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 50vh;
+}
+
+section.websites .modal .modal-dialog .modal-footer button {
+  background: none;
+  border: 1px solid white;
+}
+
+section.websites .images {
+  margin-bottom: 10vh;
+}
+
+section.websites .images img {
+  width: 100vh;
+  height: 75vh;
+  float: right;
+}
+
+section.websites .images-sub, section.websites .images-tab {
+  display: none;
+}
+
+section.websites .e-calc {
+  margin-bottom: 10vh;
+}
+
+section.websites .e-calc img {
+  width: 100vh;
+  float: right;
+}
+
+section.websites .website-title-sub, section.websites .website-title-tab {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  section.websites .title h1 {
+    margin-top: 16vh;
+    margin-bottom: 8vh;
+    text-align: center;
+  }
+  section.websites .website-title {
+    margin-bottom: 0;
+  }
+  section.websites .website-title h1 {
+    display: none;
+  }
+  section.websites .images, section.websites .e-calc {
+    display: none;
+  }
+  section.websites .images-sub {
+    display: block;
+  }
+  section.websites .images-sub img {
+    height: 30vh;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5vh;
+  }
+  section.websites .website-title-sub {
+    display: block;
+  }
+  section.websites .website-title-sub h1 {
+    text-align: center;
+    font-size: 3.5vh;
+  }
+  section.websites .website-title-sub h1 a {
+    text-decoration: none;
+    color: white;
+  }
+  section.websites .website-title-sub p {
+    font-size: 1.7vh;
+    text-align: center;
+  }
+  section.websites .website-title-sub p.progLang {
+    text-align: center;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+  }
+  section.websites .website-title-sub p.progLang a {
+    border: solid 1px white;
+    padding: 1vh;
+    border-radius: 1vh;
+    margin-right: 1.5vh;
+  }
+  section.websites .modal .modal-dialog .modal-body h1 {
+    font-size: 3vh;
+    margin: 0;
+  }
+  section.websites .modal .modal-dialog .modal-body p.relDate {
+    padding: 0;
+    font-size: 2vh;
+  }
+  section.websites .modal .modal-dialog .modal-body p.content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.3vh;
+    text-align: center;
+    width: 40vh;
+  }
+  section.websites .modal .modal-dialog .modal-body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 38vh;
+    margin-bottom: 5vh;
+  }
+  section.websites .modal .modal-dialog .modal-footer .buttons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section.websites .images img {
+    width: 90vh;
+    height: 65vh;
+  }
+  section.websites .e-calc img {
+    width: 90vh;
+  }
+  section.websites .modal .modal-dialog .modal-body img {
+    height: 40vh;
+  }
+  section.websites .modal .modal-dialog .modal-footer .buttons a button {
+    height: 8vh;
+    font-size: 3vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.websites .title h1 {
+    margin-top: 16vh;
+    margin-bottom: 8vh;
+    text-align: center;
+  }
+  section.websites .website-title {
+    margin-bottom: 0;
+  }
+  section.websites .website-title h1 {
+    display: none;
+  }
+  section.websites .images, section.websites .e-calc {
+    display: none;
+  }
+  section.websites .images-tab {
+    display: block;
+  }
+  section.websites .images-tab img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    margin-bottom: 5vh;
+  }
+  section.websites .website-title-tab {
+    display: block;
+  }
+  section.websites .website-title-tab h1 {
+    text-align: center;
+    font-size: 3.5vh;
+  }
+  section.websites .website-title-tab p {
+    font-size: 1.7vh;
+    text-align: center;
+  }
+  section.websites .website-title-tab p.progLang {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+  }
+  section.websites .website-title-tab p.progLang a {
+    border: solid 1px white;
+    padding: 1vh;
+    border-radius: 1vh;
+    margin-right: 1.5vh;
+  }
+  section.websites .modal .modal-dialog .modal-body h1 {
+    font-size: 3vh;
+    margin: 0;
+  }
+  section.websites .modal .modal-dialog .modal-body p.relDate {
+    padding: 0;
+    font-size: 2vh;
+  }
+  section.websites .modal .modal-dialog .modal-body p.content {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2.3vh;
+    text-align: center;
+    width: 40vh;
+  }
+  section.websites .modal .modal-dialog .modal-body img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 38vh;
+    margin-bottom: 5vh;
+  }
+  section.websites .modal .modal-dialog .modal-footer .buttons {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section.websites .images img {
+    width: 70vh;
+    height: 45vh;
+  }
+  section.websites .e-calc img {
+    width: 70vh;
+  }
+  section.websites .modal .modal-dialog .modal-body img {
+    height: 32vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.websites .modal .modal-dialog .modal-footer button {
+    transition: 0.3s ease-in-out;
+  }
+  section.websites .modal .modal-dialog .modal-footer button:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+section.contact-us .title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  margin-top: 30vh;
+}
+
+section.contact-us .form p {
+  font-family: Poppins;
+  font-size: 2.5vh;
+  margin-top: 3vh;
+  margin-bottom: 0.5vh;
+  font-weight: 500;
+}
+
+section.contact-us .form input {
+  border: none;
+  border: 1px solid white;
+  background: none;
+  width: 70vh;
+  padding: 1.5vh;
+  color: white;
+  font-family: Poppins;
+}
+
+section.contact-us .form input:focus {
+  outline: none;
+}
+
+section.contact-us .form textarea {
+  border: none;
+  border: 1px solid white;
+  background: none;
+  width: 70vh;
+  padding: 1.5vh;
+  color: white;
+  font-family: Poppins;
+  height: 26vh;
+  resize: none;
+}
+
+section.contact-us .form button {
+  padding: 2vh;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 1vh;
+  font-family: Quicksand;
+  font-weight: bold;
+  margin-top: 2vh;
+}
+
+section.contact-us .form span {
+  font-family: Quicksand;
+  color: #f14c4c;
+  font-size: 2vh;
+}
+
+section.contact-us .image img {
+  height: 80vh;
+  margin-top: 40vh;
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 575px) {
+  section.contact-us .title h1 {
+    margin-top: 16vh;
+    text-align: center;
+  }
+  section.contact-us .form p {
+    text-align: center;
+  }
+  section.contact-us .form input, section.contact-us .form textarea, section.contact-us .form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  section.contact-us .form button {
+    width: 20%;
+  }
+  section.contact-us .form span {
+    display: table;
+    margin: auto;
+  }
+  section.contact-us .image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section.contact-us .form input, section.contact-us .form textarea {
+    width: 100%;
+  }
+  section.contact-us .form button.send {
+    font-size: 3vh;
+  }
+  section.contact-us .image img {
+    margin-top: 50vh;
+    height: 80vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.contact-us .title h1 {
+    margin-top: 16vh;
+    text-align: center;
+  }
+  section.contact-us .form p {
+    text-align: center;
+  }
+  section.contact-us .form input, section.contact-us .form textarea, section.contact-us .form button {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 85%;
+  }
+  section.contact-us .form button {
+    font-size: 2.5vh;
+    width: 20%;
+  }
+  section.contact-us .form span {
+    display: table;
+    margin: auto;
+  }
+  section.contact-us .image {
+    display: none;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section.contact-us .form button.send {
+    font-size: 3vh;
+  }
+  section.contact-us .form input, section.contact-us .form textarea {
+    width: 100%;
+  }
+  section.contact-us .image img {
+    margin-top: 40vh;
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.contact-us .form button {
+    transition: 0.3s ease-in-out;
+  }
+  section.contact-us .form button:hover {
+    background-color: white;
+    color: black;
+  }
+}
+
+footer {
+  margin-top: 20vh;
+}
+
+footer .row {
+  border-top: 1px solid white;
+}
+
+footer .row .copyright p {
+  font-family: Quicksand;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5vh;
+  padding-top: 2vh;
+}
+
+footer .row .version a {
+  font-family: Quicksand;
+  color: white;
+  font-weight: 400;
+  font-size: 1.5vh;
+  padding-top: 2vh;
+  float: right;
+  transition: 0.3s ease-in-out;
+}
+
+footer .row .version a:hover {
+  color: #9c9c9c;
+}
+
+footer .row .version .modal .modal-dialog .modal-content {
+  background-color: black;
+  border: 1px solid white;
+}
+
+footer .row .version .modal .modal-dialog .modal-header h1 {
+  font-size: 5vh;
+}
+
+footer .row .version .modal .modal-dialog .modal-header button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  height: 5vh;
+  font-size: 3vh;
+}
+
+footer .row .version .modal .modal-dialog .modal-body .row {
+  border: none;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+footer .row .version .modal .modal-dialog .modal-body .row h2 {
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  font-size: 4vh;
+}
+
+footer .row .version .modal .modal-dialog .modal-body .row h3 {
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  font-size: 2.5vh;
+}
+
+footer .row .version .modal .modal-dialog .modal-body .row h3 span {
+  font-family: Quicksand;
+  color: white;
+  font-weight: 400;
+}
+
+section.about-hero .title h1, section.about-hero .title-sub h1 {
+  font-size: 7.5vh;
+  margin-top: 22vh;
+}
+
+section.about-hero .title p.nickname, section.about-hero .title-sub p.nickname {
+  font-size: 3vh;
+  font-weight: 700;
+}
+
+section.about-hero .title p.content, section.about-hero .title-sub p.content {
+  font-size: 2.3vh;
+  line-height: 4vh;
+}
+
+section.about-hero .title .buttons-about, section.about-hero .title-sub .buttons-about {
+  margin-top: 5vh;
+}
+
+section.about-hero .title .buttons-about button, section.about-hero .title-sub .buttons-about button {
+  padding: 2vh;
+  color: white;
+  background: none;
+  border: 1px solid white;
+  border-radius: 1vh;
+  font-family: Quicksand;
+  font-weight: bold;
+  font-weight: 400;
+  margin-right: 2vh;
+  transition: 0.3s ease-in-out;
+}
+
+section.about-hero .title .buttons-about button:hover, section.about-hero .title-sub .buttons-about button:hover {
+  background-color: white;
+  color: black;
+}
+
+section.about-hero .title .buttons-about button strong, section.about-hero .title-sub .buttons-about button strong {
+  font-family: Poppins;
+  margin-right: 0.5vh;
+}
+
+section.about-hero .image {
+  margin-top: 15vh;
+}
+
+section.about-hero .image img {
+  height: 83vh;
+}
+
+section.about-hero .title-sub {
+  display: none;
+}
+
+@media screen and (max-width: 575px) {
+  section.about-hero .title {
+    display: none;
+  }
+  section.about-hero .title-sub {
+    display: block;
+  }
+  section.about-hero .title-sub h1 {
+    margin-top: 0vh;
+    font-size: 5.5vh;
+  }
+  section.about-hero .title-sub p.content {
+    width: 50vh;
+    line-height: 4.5vh;
+    font-size: 2.3vh;
+  }
+  section.about-hero .title-sub .buttons-about button {
+    margin-bottom: 2vh;
+    margin-right: 0;
+  }
+  section.about-hero .image img {
+    height: 50vh;
+    width: 100%;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section.about-hero .title h1 {
+    margin-top: 20vh;
+  }
+  section.about-hero .buttons-about {
+    margin-top: 5vh;
+  }
+  section.about-hero .buttons-about button {
+    margin-right: 2vh;
+    padding: 2vh;
+    font-size: 2.5vh;
+  }
+  section.about-hero .image img {
+    height: 70vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.about-hero .title {
+    display: none;
+  }
+  section.about-hero .title-sub {
+    display: block;
+  }
+  section.about-hero .title-sub h1 {
+    margin-top: 0vh;
+    font-size: 5.5vh;
+  }
+  section.about-hero .title-sub p.content {
+    width: 60vh;
+    line-height: 4.5vh;
+    font-size: 2.3vh;
+  }
+  section.about-hero .title-sub .buttons-about button {
+    margin-bottom: 2vh;
+    margin-right: 0;
+    font-size: 3vh;
+  }
+  section.about-hero .image {
+    width: 100%;
+  }
+  section.about-hero .image img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    height: 50vh;
+    width: 70%;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section.about-hero .image img {
+    float: right;
+    height: 64vh;
+  }
+  section.about-hero .title h1 {
+    font-size: 5.5vh;
+    margin-top: 20vh;
+  }
+  section.about-hero .title p.nickname {
+    font-size: 2.5vh;
+  }
+  section.about-hero .title p.content {
+    font-size: 2vh;
+  }
+  section.about-hero .title .buttons-about {
+    margin-top: 5vh;
+    width: 100vh;
+  }
+  section.about-hero .title .buttons-about button {
+    margin-right: 2vh;
+    padding: 2vh;
+    color: white;
+    background: none;
+    border: 1px solid white;
+    border-radius: 1vh;
+    font-family: Quicksand;
+    font-weight: bold;
+    font-weight: 400;
+  }
+  section.about-hero .title .buttons-about button strong {
+    font-family: Poppins;
+    margin-right: 0.5vh;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  section.about-hero .image img {
+    float: right;
+  }
+}
+
+section.skill-exp .skills .title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+}
+
+section.skill-exp .skills .skill-title {
+  margin-bottom: 5vh;
+}
+
+section.skill-exp .skills .skill-title h1 {
+  font-size: 3.5vh;
+  font-family: Poppins;
+  font-weight: bold;
+  color: white;
+  margin: 0;
+}
+
+section.skill-exp .skills .tools a {
+  font-family: Quicksand;
+  color: white;
+  font-weight: 400;
+  font-size: 2vh;
+  border: solid 1px white;
+  padding: 1.5vh;
+  border-radius: 1vh;
+  margin-right: 1.5vh;
+}
+
+section.skill-exp .skills .tools a.mcss, section.skill-exp .skills .tools a.js, section.skill-exp .skills .tools a.figma, section.skill-exp .skills .tools a.git {
+  margin-right: 0;
+}
+
+section.skill-exp .skills .des, section.skill-exp .skills .ver {
+  margin-top: 10vh;
+}
+
+section.skill-exp .exp .title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+}
+
+section.skill-exp .exp .exp-date {
+  display: none;
+  margin-bottom: 7vh;
+}
+
+section.skill-exp .exp .exp-date h1 {
+  font-size: 2.5vh;
+  font-weight: 500;
+}
+
+section.skill-exp .exp .exp-place {
+  margin-bottom: 7vh;
+}
+
+section.skill-exp .exp .exp-place h1 {
+  font-size: 3.5vh;
+  margin-bottom: 1.5vh;
+}
+
+section.skill-exp .exp .exp-place .exp-place-content {
+  margin-bottom: 2.5vh;
+}
+
+section.skill-exp .exp .exp-place .exp-place-content p {
+  font-size: 2.3vh;
+  margin: 0;
+}
+
+@media screen and (max-width: 575px) {
+  section.skill-exp .skills .title h1, section.skill-exp .skills .skill-title h1 {
+    text-align: center;
+  }
+  section.skill-exp .skills .tools p {
+    text-align: center;
+  }
+  section.skill-exp .exp .title h1 {
+    text-align: center;
+  }
+  section.skill-exp .exp .exp-date {
+    margin-bottom: 0;
+  }
+  section.skill-exp .exp .exp-date h1 {
+    display: none;
+  }
+  section.skill-exp .exp .exp-place {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 53vh;
+    margin-bottom: 0;
+  }
+  section.skill-exp .exp .exp-place.kodego {
+    margin-bottom: 5vh;
+  }
+  section.skill-exp .exp .exp-place h1.exp-date {
+    display: block;
+    font-weight: 400;
+    font-size: 2.6vh;
+    margin-bottom: 2.5vh;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section.skill-exp .skills .title h1 {
+    margin-top: 20vh;
+  }
+  section.skill-exp .skills .tools p {
+    line-height: 3.5vh;
+  }
+  section.skill-exp .exp .title h1 {
+    margin-top: 20vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.skill-exp .skills .title h1, section.skill-exp .skills .skill-title h1 {
+    text-align: center;
+  }
+  section.skill-exp .skills .tools p {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+  }
+  section.skill-exp .skills .tools p a {
+    border: solid 1px white;
+    padding: 1vh;
+    border-radius: 1vh;
+    margin-right: 1.5vh;
+  }
+  section.skill-exp .skills .tools span {
+    margin-top: 90vh;
+  }
+  section.skill-exp .exp .title h1 {
+    text-align: center;
+  }
+  section.skill-exp .exp .exp-date {
+    margin-bottom: 0;
+  }
+  section.skill-exp .exp .exp-date h1 {
+    display: none;
+  }
+  section.skill-exp .exp .exp-place {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 65vh;
+    margin-bottom: 0;
+  }
+  section.skill-exp .exp .exp-place.kodego {
+    margin-bottom: 5vh;
+  }
+  section.skill-exp .exp .exp-place h1.exp-date {
+    display: block;
+    font-weight: 400;
+    font-size: 2.6vh;
+    margin-bottom: 2.5vh;
+  }
+}
+
+@media screen and (min-width: 992px) and (max-width: 1199px) {
+  section.skill-exp {
+    margin-top: 5vh;
+  }
+}
+
+section.hobbies-cert .hobbies h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  margin-bottom: 5vh;
+}
+
+section.hobbies-cert .hobbies p a {
+  font-family: Quicksand;
+  color: white;
+  font-weight: 400;
+  font-size: 2vh;
+  border: solid 1px white;
+  padding: 1.5vh;
+  border-radius: 1vh;
+  margin-right: 1.5vh;
+}
+
+section.hobbies-cert .cert .title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  margin-bottom: 5vh;
+}
+
+section.hobbies-cert .cert .cert-date h1 {
+  font-size: 2.5vh;
+  font-weight: 500;
+}
+
+section.hobbies-cert .cert .cert-place h1 {
+  font-size: 3.5vh;
+  margin-bottom: 1.5vh;
+}
+
+section.hobbies-cert .cert .cert-place h1.cert-date {
+  display: none;
+}
+
+section.hobbies-cert .cert .cert-place .cert-place-content p {
+  font-size: 2.3vh;
+  margin: 0;
+}
+
+section.hobbies-cert .cert .cert-place .cert-place-content a {
+  font-family: Quicksand;
+  color: white;
+  font-weight: 400;
+  font-size: 2vh;
+  border: solid 1px white;
+  padding: 1.5vh;
+  border-radius: 1vh;
+  margin-right: 1.5vh;
+  transition: 0.3s ease-in-out;
+}
+
+section.hobbies-cert .cert .cert-place .cert-place-content a:hover {
+  background-color: white;
+  color: black;
+}
+
+section.hobbies-cert .cert .cert-place .cert-place-content.a {
+  margin-top: 3vh;
+}
+
+section.hobbies-cert .cert .cert-place .modal .modal-dialog .modal-content {
+  background-color: black;
+  border: 1px solid white;
+}
+
+section.hobbies-cert .cert .cert-place .modal .modal-dialog .modal-header {
+  border: none;
+}
+
+section.hobbies-cert .cert .cert-place .modal .modal-dialog .modal-header button {
+  border: none;
+  background-color: transparent;
+  color: white;
+  height: 5vh;
+  font-size: 3vh;
+}
+
+section.hobbies-cert .cert .cert-place .modal .modal-dialog .modal-body h1 {
+  font-size: 6vh;
+  margin: 0;
+}
+
+section.hobbies-cert .cert .cert-place .modal .modal-dialog .modal-body img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  height: 60vh;
+}
+
+@media screen and (max-width: 575px) {
+  section.hobbies-cert .hobbies h1 {
+    text-align: center;
+  }
+  section.hobbies-cert .hobbies p {
+    text-align: center;
+  }
+  section.hobbies-cert .hobbies p a.biking, section.hobbies-cert .hobbies p a.watch, section.hobbies-cert .hobbies p a.games {
+    margin-right: 0;
+  }
+  section.hobbies-cert .cert .title h1 {
+    text-align: center;
+    margin-bottom: 12vh;
+  }
+  section.hobbies-cert .cert .cert-date h1 {
+    display: none;
+  }
+  section.hobbies-cert .cert .cert-place {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 53vh;
+  }
+  section.hobbies-cert .cert .cert-place h1.cert-date {
+    display: block;
+    font-weight: 400;
+    font-size: 2.6vh;
+    margin-bottom: 2.5vh;
+  }
+  section.hobbies-cert .cert .cert-place .modal .modal-dialog .modal-body img {
+    height: 30vh;
+  }
+}
+
+@media screen and (min-width: 576px) and (max-width: 767px) {
+  section.hobbies-cert .hobbies p {
+    line-height: 3.5vh;
+  }
+}
+
+@media screen and (min-width: 768px) and (max-width: 991px) {
+  section.hobbies-cert .hobbies h1 {
+    text-align: center;
+  }
+  section.hobbies-cert .hobbies p {
+    text-align: center;
+    font-size: 2vh;
+    margin-top: 4vh;
+    margin-bottom: 10vh;
+  }
+  section.hobbies-cert .hobbies p a {
+    border: solid 1px white;
+    padding: 1vh;
+    border-radius: 1vh;
+    margin-right: 1.5vh;
+  }
+  section.hobbies-cert .hobbies p a.biking, section.hobbies-cert .hobbies p a.watch, section.hobbies-cert .hobbies p a.games {
+    margin-right: 0;
+  }
+  section.hobbies-cert .cert .title h1 {
+    text-align: center;
+    margin-bottom: 12vh;
+  }
+  section.hobbies-cert .cert .cert-date h1 {
+    display: none;
+  }
+  section.hobbies-cert .cert .cert-place {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 53vh;
+  }
+  section.hobbies-cert .cert .cert-place h1.cert-date {
+    display: block;
+    font-weight: 400;
+    font-size: 2.6vh;
+    margin-bottom: 2.5vh;
+  }
+  section.hobbies-cert .cert .cert-place .modal .modal-dialog .modal-body img {
+    height: 30vh;
+  }
+}

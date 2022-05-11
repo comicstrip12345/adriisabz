@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/profile.css'
 
 const Profile = () => {
     return (
@@ -14,8 +13,8 @@ const Profile = () => {
                             In my freetime, I take photos on everywhere, creating websites to increase my knowledge in coding, and riding a bike elsewhere.
                         </p>
                         <div className="buttons-about">
-                            <button><strong>2+</strong> Months of Experience</button>
-                            <button><strong>3</strong>  Projects Finished</button>
+                            <button><strong>3+</strong> Months of Experience</button>
+                            <button><strong>5</strong>  Projects Finished</button>
                         </div>
                     </div>
                     <div className="col-12 col-sm-6 col-md-12 col-lg-7 col-xl-7 image">
@@ -30,8 +29,8 @@ const Profile = () => {
                                 In my freetime, I take photos on everywhere, creating websites to increase my knowledge in coding, and riding a bike elsewhere.
                             </p>
                             <div className="buttons-about">
-                                <button><strong>2+</strong> Months of Experience</button>
-                                <button><strong>3</strong>  Projects Finished</button>
+                                <button><strong>3+</strong> Months of Experience</button>
+                                <button><strong>5</strong>  Projects Finished</button>
                             </div>
                         </center>
                     </div>

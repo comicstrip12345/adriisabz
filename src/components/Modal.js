@@ -22,6 +22,7 @@ const Modal = (props) => {
                 </div>
                 <div className="modal-footer">
                     <div className='buttons'>
+                        <a className="me-4" href={props.githubLink} target={'_blank'} rel="noreferrer noopener"><button type="button" className="btn btn-primary gap">Github</button></a>
                         <a href={props.webLink} target={'_blank'} rel="noreferrer noopener"><button type="button" className="btn btn-primary gap">Enter Site</button></a>
                     </div>
                 </div>

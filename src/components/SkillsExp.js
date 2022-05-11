@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/skillsexp.css'
 
 const SkillsExp = () => {
     return (
@@ -22,6 +21,13 @@ const SkillsExp = () => {
                                     <br/> <br/>
                                     <a href="/#">Bootstrap 5</a>
                                     <a href="/#" className="mcss">materializeCSS</a>
+                                    <br/> <br/>
+                                    <a href="/#">ReactJS</a>
+                                    <a href="/#">SASS</a>
+                                    <a href="/#">mySQL</a>
+                                    <br/> <br/>
+                                    <a href="/#">NodeJS</a>
+                                    <a href="/#">ExpressJS</a>
                                 </p>
                                 
                             </div>
@@ -84,7 +90,7 @@ const SkillsExp = () => {
                                         <p>
                                             - Knowing the coding standards needed for <br/> &nbsp; debugging and reviewing the codes of website.
                                         </p>
-                                        <p>- has created 2 websites. Click <a href="/#">here</a> to view.</p>
+                                        <p>- has created 4 websites. Click <a href="/#">here</a> to view.</p>
                                     </div>
                                 </div>
                             </div>

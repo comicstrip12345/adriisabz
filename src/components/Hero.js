@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/hero.css'
 
 const Hero = () => {
     return (
@@ -18,7 +17,7 @@ const Hero = () => {
                     </div>
                     <div className="buttons">
                         <a href='#buttonWebsite'><button>Websites</button></a>
-                        <a href='../files/adrianResume.pdf'><button>Resume</button></a>
+                        <a href='../files/adrii-resume-latest.pdf'><button>Resume</button></a>
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 image">
@@ -36,8 +35,8 @@ const Hero = () => {
                             <a href="#/"><img src={require("../images/socmed/linkedin.png")} alt="linkedin" className="linkedin"/></a>
                         </div>
                         <div className="buttons">
-                            <button>Websites</button>
-                            <button className="resume">Resume</button>
+                            <a href='#buttonWebsite'><button>Websites</button></a>
+                            <a href='../files/adrii-resume-latest.pdf'><button className='resume'>Resume</button></a>
                         </div>
                     </center>
                 </div>

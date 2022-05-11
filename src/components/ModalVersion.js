@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import VersionList from './VersionList'
 
 const ModalVersion = (props) => {
@@ -11,6 +11,18 @@ const ModalVersion = (props) => {
                         <button type="button" className="" data-bs-dismiss="modal" aria-label="Close"><i className="bi bi-x-lg"></i></button>
                     </div>
                     <div className="modal-body">
+                        <VersionList
+                            ver="v.2.1.0"
+                            relDate="May 11, 2022"
+                            author="Adriano Sabanal Jr."
+                            details={<Fragment>
+                                <strong>1. </strong>SASS Code Optimization<br/>
+                                <strong>2. </strong>Added Form Validation <br/>
+                                <strong>3. </strong>Added 2 Website Projects and its Github Links <br/>
+                                <strong>4. </strong>Added hover animation to all buttons and hyperlinks <br/>
+                                <strong>5. </strong>Changed Grammar to all website description
+                            </Fragment>}
+                        />
                         <VersionList
                             ver="v.2.0.2"
                             relDate="May 1, 2022"

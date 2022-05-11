@@ -1,5 +1,4 @@
 import React from 'react'
-import '../css/hobcert.css'
 import ModalCert from './ModalCert'
 
 const HobCert = () => {
@@ -22,13 +21,13 @@ const HobCert = () => {
                     </div>
                     <div className="col-12 col-sm-7 col-md-12 col-lg-7 col-xl-7 cert">
                         <div className="row">
-                            <div className="col-xl-12 title">
+                            <div className="col-12 title">
                                 <h1>Certifications</h1>
                             </div>
-                            <div className="col-12 col-sm-5 col-xl-5 d-flex align-items-center cert-date">
+                            <div className="col-12 col-sm-5 col-md-12 col-lg-5 d-flex align-items-center cert-date">
                                 <h1>February 4, 2022</h1>
                             </div>
-                            <div className="col-12 col-sm-7 col-xl-7 cert-place">
+                            <div className="col-12 col-sm-7 col-md-12 col-lg-7 cert-place">
                                 <h1>Web Development III</h1>
                                 <h1 className="cert-date">February 4, 2022</h1>
                                 <div className="row">
