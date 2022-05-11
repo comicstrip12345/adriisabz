@@ -12,6 +12,12 @@ const ModalVersion = (props) => {
                     </div>
                     <div className="modal-body">
                         <VersionList
+                            ver="v.2.1.1"
+                            relDate="May 11, 2022"
+                            author="Adriano Sabanal Jr."
+                            details="Solved error downloading resume and certificates by link to Google Drive."
+                        />
+                        <VersionList
                             ver="v.2.1.0"
                             relDate="May 11, 2022"
                             author="Adriano Sabanal Jr."

@@ -22,7 +22,7 @@ const ContactUs = () => {
                                 <input type="text" {...register("Name", {required:true})}/>
                                 {errors.Name && <span>This field is required</span>}
                                 <p>Email Address:</p>
-                                <input type="text" {...register("Email", {required:"This field is required", pattern:{value: /^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/, message: "Enter Valid Email"}})}/>
+                                <input type="text" {...register("Email", {required:"This field is required", pattern:{value: /^\w+([.-]?\w+)*@\w+([.-]?\w+)*(\.\w{2,3})+$/, message: "Enter Valid Email"}})}/>
                                 {errors.Email && <span>{errors.Email.message}</span>}
                                 <p>Subject:</p>
                                 <input type="text" {...register("Subject", {required:true})}/>

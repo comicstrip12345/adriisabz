@@ -17,7 +17,7 @@ const Hero = () => {
                     </div>
                     <div className="buttons">
                         <a href='#buttonWebsite'><button>Websites</button></a>
-                        <a href='../files/adrii-resume-latest.pdf'><button>Resume</button></a>
+                        <a href='https://drive.google.com/file/d/1a-iFWZ0t1eBr7BuMfDKQyCKTHicClWxh/view?usp=sharing' target={'_blank'} rel="noreferrer noopener" download><button>Resume</button></a>
                     </div>
                 </div>
                 <div className="col-12 col-sm-6 col-md-12 col-lg-6 col-xl-6 image">
@@ -36,7 +36,7 @@ const Hero = () => {
                         </div>
                         <div className="buttons">
                             <a href='#buttonWebsite'><button>Websites</button></a>
-                            <a href='../files/adrii-resume-latest.pdf'><button className='resume'>Resume</button></a>
+                            <a href='https://drive.google.com/file/d/1a-iFWZ0t1eBr7BuMfDKQyCKTHicClWxh/view?usp=sharing' target={'_blank'} rel="noreferrer noopener" download><button className='resume'>Resume</button></a>
                         </div>
                     </center>
                 </div>

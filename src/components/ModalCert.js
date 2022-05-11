@@ -17,7 +17,7 @@ const ModalCert = (props) => {
                 </div>
                 <div className="modal-footer">
                     <div className='buttons'>
-                        <a href="../files/tesda-cert.pdf" target={'_blank'} rel="noreferrer noopener">Download</a>
+                        <a href="https://drive.google.com/file/d/1vKd_9Jtk8n3DpbUPEuxlmaB5maa0EFdm/view?usp=sharing" target={'_blank'} rel="noreferrer noopener" download>Download</a>
                     </div>
                 </div>
                 </div>
