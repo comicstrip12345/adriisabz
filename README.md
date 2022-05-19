@@ -1,4 +1,4 @@
-# adriisabz v.2.1.0
+# adriisabz v.2.1.2
 **Released Date:** May 19, 2022 \
 **Author:** Adriano Sabanal Jr. \
 **Details:** \
