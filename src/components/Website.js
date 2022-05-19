@@ -1,5 +1,4 @@
 import React from 'react'
-// import '../css/website.css'
 import Modal from './Modal'
 
 const Website = () => {
@@ -11,6 +10,8 @@ const Website = () => {
                     <div className="col-12 title">
                         <h1>Websites</h1>
                     </div>
+
+                    {/* Adriisabz v.1 Desktop Version */}
                     <div className="col-sm-5 col-xl-5 website-title d-flex align-items-sm-center">
                         <h1>
                             <a href="#/" type="button" data-bs-toggle="modal" data-bs-target="#adriisabz">adriisabz v.1</a> <br/>
@@ -40,6 +41,7 @@ const Website = () => {
                     <div className="col-sm-7 col-xl-7 images">
                         <img src={require("../images/websites/adriisabz-v1.png")} alt=""/>
                     </div>
+                    {/* Adriisabz v.1 Mobile Version */}
                     <div className="col-12 images-sub">
                         <img src={require('../images/websites/devices/adriisabz-v1-mobile.png')} alt=""/>
                     </div>
@@ -82,6 +84,8 @@ const Website = () => {
                             <a className="me-0" href="#/">materializeCSS</a>
                         </p>
                     </div>
+
+                    {/* Gadspect Desktop Version */}
                     <div className="col-5 website-title d-flex align-items-sm-center">
                         <h1>
                             <a href="#/" type="button" data-bs-toggle="modal" data-bs-target="#gadspect">GadSpect</a> <br/>
@@ -109,8 +113,9 @@ const Website = () => {
                         </h1> 
                     </div>
                     <div className="col-7 images">
-                    <img src={require("../images/websites/gadspect.png")} alt=""/>
+                        <img src={require("../images/websites/gadspect.png")} alt=""/>
                     </div>
+                    {/* Gadspect Mobile Version */}
                     <div className="col-12 images-sub">
                         <img src={require("../images/websites/devices/gadspect-mobile.png")} alt=""/>
                     </div>
@@ -153,6 +158,8 @@ const Website = () => {
                             <a className='me-0' href="#/">Bootstrap 5</a>
                         </p>
                     </div>
+
+                    {/* e-calc Desktop Version */}
                     <div className="col-5 website-title d-flex align-items-sm-center">
                         <h1>
                             <a href="#/" type="button" data-bs-toggle="modal" data-bs-target="#ecalc">e-calc</a> <br/>
@@ -184,6 +191,7 @@ const Website = () => {
                     <div className="col-7 e-calc">
                         <img src={require("../images/websites/e-calc.png")} alt=""/>
                     </div>
+                    {/* e-calc Mobile Version */}
                     <div className="col-12 images-sub">
                         <img src={require("../images/websites/devices/ecalc-mobile.png")} alt=""/>
                     </div>
@@ -230,6 +238,8 @@ const Website = () => {
                             <a href="#/" className="me-0">SASS</a>
                         </p>
                     </div>
+
+                    {/* watchr Desktop Version */}
                     <div className="col-5 website-title d-flex align-items-sm-center">
                         <h1>
                             <a href="#/" type="button" data-bs-toggle="modal" data-bs-target="#watchr">watchr</a> <br/>
@@ -238,7 +248,7 @@ const Website = () => {
                                 img={require('../images/websites/devices/watchr-desktop.png')}
                                 h1="watchr"
                                 pRelDate="April 29, 2022"
-                                pContent="watchr is a website developed under the program of KodeGo. The programming languages used to built this website are HTML5, CSS3 and Javascript ES6, framework used are Bootstrap 5 and MUI, and library used is ReactJS. This website is an online streaming where you can watch unlimited Movies and TV Series, and you can avail per monthly subscription. It's goal is to provide users the entertainment where they can relax and forget all the problems from work and etc."
+                                pContent="watchr is a website developed under the program of KodeGo. This website is an online streaming where you can watch unlimited Movies and TV Series, and you can avail per monthly subscription. It's goal is to provide users the entertainment where they can relax and forget all the problems from work and etc. It was built by 3 members, and we used HTML5, CSS3 and Javascript ES6, framework used are Bootstrap 5 and MUI, and library used is ReactJS. I designed the website and incorporate those designs to HTML Pages."
                                 webLink="https://watchrs2.vercel.app/"
                                 githubLink="https://github.com/prot3ch1993/watchrs2"
                             />
@@ -263,6 +273,7 @@ const Website = () => {
                     <div className="col-7 images">
                     <img src={require("../images/websites/watchr.png")} alt=""/>
                     </div>
+                    {/* e-calc Mobile Version */}
                     <div className="col-12 images-sub">
                         <img src={require("../images/websites/devices/watchr-mobile.png")} alt=""/>
                     </div>
@@ -276,7 +287,7 @@ const Website = () => {
                             img={require('../images/websites/devices/watchr-mobile.png')}
                             h1="watchr"
                             pRelDate="April 29, 2022"
-                            pContent="watchr is a website developed under the program of KodeGo. The programming languages used to built this website are HTML5, CSS3 and Javascript ES6, framework used are Bootstrap 5 and MUI, and library used is ReactJS. This website is an online streaming where you can watch unlimited Movies and TV Series, and you can avail per monthly subscription. It's goal is to provide users the entertainment where they can relax and forget all the problems from work and etc."
+                            pContent="watchr is a website developed under the program of KodeGo. This website is an online streaming where you can watch unlimited Movies and TV Series, and you can avail per monthly subscription. It's goal is to provide users the entertainment where they can relax and forget all the problems from work and etc. It was built by 3 members, and we used HTML5, CSS3 and Javascript ES6, framework used are Bootstrap 5 and MUI, and library used is ReactJS. I designed the website and incorporate those designs to HTML Pages."
                             webLink="https://watchrs2.vercel.app/"
                             githubLink="https://github.com/prot3ch1993/watchrs2"
                         />
@@ -297,7 +308,7 @@ const Website = () => {
                             img={require('../images/websites/devices/watchr-tab.png')}
                             h1="watchr"
                             pRelDate="April 29, 2022"
-                            pContent="watchr is a website developed under the program of KodeGo. The programming languages used to built this website are HTML5, CSS3 and Javascript ES6, framework used are Bootstrap 5 and MUI, and library used is ReactJS. This website is an online streaming where you can watch unlimited Movies and TV Series, and you can avail per monthly subscription. It's goal is to provide users the entertainment where they can relax and forget all the problems from work and etc."
+                            pContent="watchr is a website developed under the program of KodeGo. This website is an online streaming where you can watch unlimited Movies and TV Series, and you can avail per monthly subscription. It's goal is to provide users the entertainment where they can relax and forget all the problems from work and etc. It was built by 3 members, and we used HTML5, CSS3 and Javascript ES6, framework used are Bootstrap 5 and MUI, and library used is ReactJS. I designed the website and incorporate those designs to HTML Pages."
                             webLink="https://watchrs2.vercel.app/"
                             githubLink="https://github.com/prot3ch1993/watchrs2"
                         />
@@ -312,6 +323,8 @@ const Website = () => {
                             <a className='me-0' href="#/">MUI</a>
                         </p>
                     </div>
+
+                    {/* adriisabz v.2 Desktop Version */}
                     <div className="col-5 website-title d-flex align-items-sm-center">
                         <h1>
                             <a href="#/" type="button" data-bs-toggle="modal" data-bs-target="#adriisabz-v2">adriisabz v.2</a> <br/>
@@ -344,6 +357,7 @@ const Website = () => {
                     <div className="col-7 images">
                     <img src={require("../images/websites/adriisabz-v2.png")} alt=""/>
                     </div>
+                    {/* adriisabz v.2 Mobile Version */}
                     <div className="col-12 images-sub">
                         <img src={require("../images/websites/devices/adriisabzv2-mob.png")} alt=""/>
                     </div>
