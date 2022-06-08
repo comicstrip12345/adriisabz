@@ -12,6 +12,22 @@ const ModalVersion = (props) => {
                     </div>
                     <div className="modal-body">
                         <VersionList
+                            ver="v.2.2.0"
+                            relDate="June 8, 2022"
+                            author="Adriano Sabanal Jr."
+                            details={<Fragment>
+                                <strong>1. </strong>Transformed into Single Page Application<br/>
+                                <strong>2. </strong>Updated Resume Form<br/>
+                                <strong>3. </strong>Scrollable Personal Information. Available only on desktop view.<br/>
+                                <strong>4. </strong>Added Animations on scroll.<br/>
+                                <strong>5. </strong>Added Scroll to top button.<br/>
+                                <strong>6. </strong>Added Scrollspy for each section.<br/>
+                                <strong>7. </strong>Added 2 websites.<br/>
+                                <strong>8. </strong>Contact Form is fully functional with form validation. You can reach me via contact form.<br/>
+                                <strong>9. </strong>This website can be viewed on any mobile devices.
+                            </Fragment>}
+                        />
+                        <VersionList
                             ver="v.2.1.2"
                             relDate="May 19, 2022"
                             author="Adriano Sabanal Jr."

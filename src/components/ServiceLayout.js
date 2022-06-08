@@ -2,7 +2,7 @@ import React from 'react'
 
 const ServiceLayout = (props) => {
     return (
-        <div className="col-12 col-sm-4 col-md-12 col-lg-4 col-xl-4 list-services">
+        <div data-aos="fade-up" className="col-12 col-sm-4 col-md-12 col-lg-4 col-xl-4 list-services">
             <div className="row">
                 <div className="col-12">
                     <img src={props.img} alt="services"/>

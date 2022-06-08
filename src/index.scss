@@ -100,7 +100,24 @@ h1{
 p{
     @include contentFontStyle();
 }
+button.scrollUp{
+    height: 8vh;
+    position: fixed;
+    bottom: 5vh;
+    right: 3vw;
+    background: none;
+    border: none;
 
+    i{
+        color: white;
+        font-size: 5vh;
+    }
+    @media screen and (max-width:575px){
+    }
+    @media screen and (min-width:1200px){
+        
+    }
+}
 
 // Navbar Section
 nav{
@@ -125,22 +142,36 @@ nav{
         }
     }
     nav.nav{
-        border-bottom: none;
-        
-        a{
-            @include headingFontBoldStyle();
-            font-size: 2vh;
-            transition: 0.3s ease-in-out;
-            
-            &:hover{
-                color: rgb(156, 156, 156);
+        display: none;
+    }
+    button.btn{
+        i{
+            color: $main-color;
+            font-size: 3vh;
+        }
+    }
+    .offcanvas{
+        width: 75%;
+        background-color: black;
+        font-family: $font-style-heading;
+        font-size: 3vh;
+
+        .offcanvas-header{
+            button.btn-close{
+                margin-top: 1vh;
+            }
+        }
+        .offcanvas-body{
+            ul{
+                list-style-type: none;
+
+                li{
+                    margin-bottom: 3vh;
+                }
             }
         }
     }
-}
-
-@media screen and (max-width:575px){
-    nav{
+    @media screen and (max-width:575px){
         h1{
             font-size: 2.5vh;
         }
@@ -150,204 +181,396 @@ nav{
             }
         }
     }
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:landscape){
+        button.btn{
+            display:none;
+        }
+        nav.nav{
+            display: block;
+            
+            a{
+                @include headingFontBoldStyle();
+                font-size: 2vh;
+                transition: 0.3s ease-in-out;
+                margin-left: 8vh;
+                
+                &:hover{
+                    color: rgb(156, 156, 156);
+                }
+            }
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px){
+        .offcanvas{
+            width: 50%;
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+        button.btn{
+            display:none;
+        }
+        nav.nav{
+            display: block;
+            
+            a{
+                @include headingFontBoldStyle();
+                font-size: 2vh;
+                transition: 0.3s ease-in-out;
+                margin-left: 8vh;
+                
+                &:hover{
+                    color: rgb(156, 156, 156);
+                }
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation:landscape){
+        button.btn{
+            display:none;
+        }
+        nav.nav{
+            display: block;
+            
+            a{
+                @include headingFontBoldStyle();
+                font-size: 2vh;
+                transition: 0.3s ease-in-out;
+                margin-left: 8vh;
+                
+                &:hover{
+                    color: rgb(156, 156, 156);
+                }
+            }
+        }
+    }
+    @media screen and (min-width:1200px){
+        button.btn{
+            display:none;
+        }
+        nav.nav{
+            display: block;
+            border-bottom: none;
+            
+            a{
+                @include headingFontBoldStyle();
+                font-size: 2vh;
+                transition: 0.3s ease-in-out;
+                margin-left: 8vh;
+                
+                &:hover{
+                    color: rgb(156, 156, 156);
+                }
+            }
+        }
+    }
 }
 
 // Hero Section
 section.hero{
-    margin-top: 15vh;
+    margin-top: 10vh;
+    height: 90vh;
+    position: relative;
+    background-image: url('./images/hero-pic.png');
+    background-repeat: no-repeat;
+    background-position: 35% 5%;
+    background-size: 90%;
 
-    .title,.title-sub{
+    .title{
+        margin-top: 50vh;
+        text-align: center;
+
         h1{
-            font-size: 7.5vh;
-            margin-top: 20vh;
+            font-size: 8.5vw;
         }
-        p.skill,p.nickname{
-            font-size: 3vh;
+        p.skill{
+            font-size: 5vw;
         }
-        .buttons{
-            margin-top: 8vh;
+        .carousel{
+            position:static;
 
-            button{
-                @include buttonStyle();
-                margin-right: 2vh;
-                width: 17vh;
-            }
-            button.resume{
-                margin-right: 0;
-            }
-        }
-    }
-    .image{
-        img{
-            height: 83vh;
-        }
-    }
-    .socmed{
-        img{
-            height: 3.5vh;
-            margin-right: 4vh;
-        }
-        img.linkedin{
-            margin-right: 0;
-        }
-    }
-    .title-sub{
-        display: none;
-    }
-}
+            .socmed{
+                text-align: center;
 
-@media screen and (max-width:575px){
-    section.hero{
-        .title{
-            display: none;
-        }
-        .title-sub{
-            display: block;
+                a{
+                    margin-right: 4vh;
 
-            h1{
-                margin-top: 0;
-                font-size: 4.5vh;
-            }
-            p.skill{
-                font-size: 2.3vh;
-            }
-            .buttons{
-                margin-top: 4vh;
-
-                button{
-                    width: 14vh;
-                    padding: 1vh;
+                    &.github{
+                        margin-right: 0;
+                    }
+                    img{
+                        height: 3.5vh;
+                    }
                 }
-            }
-        }
-        .image{
-            img{
-                height: 50vh;
-                width: 100%;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:576px) and (max-width:767px){
-    section.hero{
-        margin-top: 20vh;
-
-        .title{
-            h1{
-                font-size: 6.5vh;
-                margin-top: 17vh;
-                margin-bottom: 1.5vh;
-            }
-            p.skill{
-                margin-bottom: 1.5vh;
-                font-size: 2.6vh;
-            }
-            .buttons{
-                margin-top: 5vh;
-
-                button{
-                    padding: 1vh;
-                    width: 15vh;
-                    font-size: 2.5vh;
-                }
-            }
                 
-        }
-        .image{
-            img{
-                height: 70vh;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:991px){
-    section.hero{
-        .title{
-            display: none;
-        }
-        .title-sub{
-            display: block;
-
-            h1{
-                margin-top: 0;
-                font-size: 5.5vh;
-            }
-            p.skill{
-                font-size: 2.6vh;
             }
             .buttons{
-                margin-top: 4vh;
+                margin-top: 6vh;
+                text-align: center;
 
-                button{
-                    width: 14vh;
-                    padding: 1vh;
-                    font-size: 2.5vh;
+                a{
+                    margin-right: 2vh;
                 }
-            }
-        }
-        .image{
-            img{
-                @include marginCenterAlign();
-                height: 50vh;
-                width: 70%;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:992px) and (max-width:1199px){
-    section.hero{
-        margin-top: 20vh;
-        .title{
-            z-index: 1;
-            h1{
-                font-size:5vh;
-                margin-top: 17vh;
-            }
-            p.skill{
-                margin-bottom: 2vh;
-                font-size: 2.5vh;
-            }
-            .buttons{
-                margin-top: 5vh;
-
                 button{
-                    padding: 1vh;
-                    width: 15vh;
-                    font-size: 2.5vh;
+                    @include buttonStyle();
                 }
-            }
-                
-        }
-        .image{
-            img{
-                height: 70vh;
-                float: right;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:1200px){
-    section.hero{
-        .image{
-            img{
-                float: right;
-            }
-        }
-        .title{
-            .buttons{
-                button{
-                    transition: 0.3s ease-in-out;
-
-                    &:hover{
-                        background-color: white;
-                        color: black;
+                &.hero{
+                    button{
+                        width: 17vh;
+                    }
+                }
+                &.profile{
+                    button{
+                        font-weight: 400;
+                        margin-right: 2vh;
                     }
                 }
             }
+            .carousel-indicators{
+                display: none;
+            }
+        }
+    }
+    @media screen and (max-width:575px){
+    }
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:portrait){
+        .col-sm-7{
+            width: 100%;
+        }
+    }
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:landscape){
+        background-image: url('./images/hero-pic.png');
+        background-repeat: no-repeat;
+        background-position: 85% 50%;
+        background-size: 40%;
+        
+        .title{
+            text-align: left;
+            margin-top: 0vh;
+
+            h1{
+                font-size: 3.5vw;
+            }
+            h1.hero{
+                margin-top: 20vh;
+            }
+            h1.profile{
+                margin-top: 7vh;
+            }
+            p.skill,p.nickname{
+                font-size: 1.9vw;
+                margin-bottom: 2vh;
+            }
+            p.content{
+                font-size: 1.33vw;
+            }
+            .carousel{
+                .socmed{
+                    text-align: left;
+                }
+                .buttons{
+                    text-align: left;
+                    a{
+                        font-size: 1.5vw;
+                    }
+                    &.profile{
+                        button{
+                            font-weight: 400;
+                            margin-right: 2vh;
+                            font-size: 1.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait){
+        background-size: 70%;
+
+        .title{
+            h1{
+                font-size: 7vw;
+            }
+            p.skill{
+                font-size: 4vw;
+            }
+            .carousel{
+                .socmed{
+                    margin-top: 3.5vh;
+                }
+                .buttons{
+                    margin-top: 5vh;
+
+                    a{
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+        background-image: url('./images/hero-pic.png');
+        background-repeat: no-repeat;
+        background-position: 85% 50%;
+        background-size: 40%;
+        
+        .col-md-12{
+            width: 60%;
+        }
+        .title{
+            text-align: left;
+            margin-top: 0vh;
+
+            h1{
+                font-size: 4.1vw;
+            }
+            h1.hero{
+                margin-top: 20vh;
+            }
+            h1.profile{
+                margin-top: 10vh;
+            }
+            p.skill,p.nickname{
+                font-size: 2vw;
+                margin-bottom: 2vh;
+            }
+            p.content{
+                font-size: 1.5vw;
+            }
+            .carousel{
+                .socmed{
+                    text-align: left;
+                }
+                .buttons{
+                    text-align: left;
+                    a{
+                        font-size: 1.3vw;
+                    }
+                    &.profile{
+                        button{
+                            font-weight: 400;
+                            margin-right: 2vh;
+                            font-size: 1.5vw;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: portrait){
+        .col-lg-7{
+            width: 100%;
+        }
+        .carousel{
+            .buttons{
+                a{
+                    font-size: 3.5vw;
+                }
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation:landscape){
+        background-image: url('./images/hero-pic.png');
+        background-repeat: no-repeat;
+        background-position: 85% 40%;
+        background-size: 50%;
+        
+        .title{
+            text-align: left;
+            margin-top: 0vh;
+
+            h1{
+                font-size: 5vw;
+            }
+            h1.hero{
+                margin-top: 20vh;
+            }
+            h1.profile{
+                margin-top: 10vh;
+            }
+            p.skill,p.nickname{
+                font-size: 2.4vw;
+                margin-bottom: 3vh;
+            }
+            p.content{
+                font-size: 1.7vw;
+            }
+            .carousel{
+                .socmed{
+                    text-align: left;
+                }
+                .buttons{
+                    text-align: left;
+                    a{
+                        font-size: 1.5vw;
+                    }
+                    &.profile{
+                        button{
+                            font-weight: 400;
+                            margin-right: 2vh;
+                            font-size: 1.5vw;
+                        }
+                    }
+                }
+                .carousel-indicators{
+                    display: block;
+                    text-align: center;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width:1200px){
+        background-image: url('./images/hero-pic.png');
+        background-repeat: no-repeat;
+        background-position: 85% 50%;
+        background-size: 40%;
+        
+        .title{
+            text-align: left;
+            margin-top: 0vh;
+
+            h1{
+                font-size: 7.5vh;
+            }
+            h1.hero{
+                margin-top: 20vh;
+            }
+            h1.profile{
+                margin-top: 9vh;
+            }
+            p.skill,p.nickname{
+                font-size: 4vh;
+            }
+            .carousel{
+                .socmed{
+                    text-align: left;
+                }
+                .buttons{
+                    text-align: left;
+
+                    button{
+                        transition: 0.3s ease-in-out;
+    
+                        &:hover{
+                            background-color: white;
+                            color: black;
+                        }
+                    }
+                }
+                .carousel-indicators{
+                    display: block;
+                    text-align: center;
+                    position: absolute;
+                    bottom: 0;
+                }
+            }
+            
+            
         }
     }
 }
@@ -357,79 +580,251 @@ section.services{
     .title{
         h1{
             @include titleStyle();
+            margin-top: 16vh;
+            margin-bottom: 8vh;
+            text-align: center;
         }
     }
     .list-services{
         img{
-            height: 20vh;
             @include marginCenterAlign();
+            height: 12vh;
+            margin-top: 3vh;
         }
         h1{
             font-size: 3vh;
-            margin-top: 5vh;
             text-align: center;
+            margin-top: 3vh;
+            margin-bottom: 0vh;
         }
         p{
-            font-size: 2.3vh;
-            margin-top: 3vh;
-            text-align: center;
-            width: 30vh;
             @include marginCenterAlign();
+            margin-top: 1vh;
+            margin-bottom: 7vh;
+            width: 50vw;
+            text-align: center;
+        }
+    }
+    @media screen and (max-width:575px){
+
+    }
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:landscape){
+        .title{
+            h1{
+                text-align: left;
+                margin-top: 0;
+            }
+        }
+        .list-services{
+            p{
+                font-size: 1.3vw;
+                width: 16vw;
+            }
+        }
+    }
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:portrait){
+        .col-sm-4{
+            width: 100%;
+        }
+        .list-services{
+            p{
+                width: 40vw;
+                font-size: 3vw;
+            }
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait){
+        .list-services{
+            p{
+                font-size: 3vw;
+                width: 40vw;
+            }
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+        .col-md-12{
+            width: 33.33333333%;
+        }
+        .title{
+            h1{
+                text-align: left;
+                margin-top: 0;
+            }
+        }
+        .list-services{
+            p{
+                font-size: 1.3vw;
+                width: 16vw;
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: portrait){
+        .col-lg-4{
+            width: 100%;
+        }
+        .list-services{
+            p{
+                font-size: 3vw;
+                width: 40vw;
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation:landscape){
+        .title{
+            h1{
+                text-align: left;
+            }
+        }
+        .list-services{
+            p{
+                width: 16vw;
+            }
+        }
+    }
+    @media screen and (min-width:1200px){
+        .title{
+            h1{
+                text-align: left;
+            }
+        }
+        .list-services{
+            p{
+                width: 16vw;
+            }
         }
     }
 }
 
-@media screen and (max-width:575px){
-    section.services{
-        .title{
+// Skills Section
+section.skill{
+    .title{
+        h1{
+            @include titleStyle();
+            margin-bottom: 5vh;
+            text-align: center;
+        }
+    }
+    .skills{
+        .skill-title{
+            text-align: center;
+
             h1{
-                margin-top: 16vh;
-                margin-bottom: 8vh;
-                text-align: center;
+                font-size: 3.5vh;
+                font-family: $font-style-heading;
+                font-weight: bold;
+                color: $main-color;
+                margin: 0;
+                margin-top: 5vh;
+                margin-bottom: 4vh;
             }
         }
-        .list-services{
-            img{
-                height: 12vh;
-                margin-top: 3vh;
+        .spacing{
+            margin-bottom: 1vh;
+        }
+        .tools{
+            text-align: center;
+            a{
+                @include programmingLanguage();
             }
-            h1{
-                margin-top: 3vh;
-                margin-bottom: 0vh;
-            }
-            p{
-                font-size: 2.3vh;
-                margin-top: 1vh;
-                margin-bottom: 7vh;
-                width: 25vh;
+            a.mr-0{
+                margin-right: 0vh;
             }
         }
     }
-}
-
-@media screen and (min-width:768px) and (max-width:991px){
-    section.services{
-        .title{
-            h1{
-                margin-top: 16vh;
-                margin-bottom: 8vh;
-                text-align: center;
+    @media screen and (max-width:575px){
+    }
+    @media screen and (max-width:575px) and (max-height:991px) and (orientation:portrait){
+        .skills{
+            .spacing{
+                margin-bottom: 2vh;
             }
         }
-        .list-services{
-            img{
-                height: 12vh;
-                margin-top: 3vh;
-            }
+    }
+    
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:landscape){
+        .title{
             h1{
-                margin-top: 3vh;
-                margin-bottom: 0vh;
+                text-align: left;
             }
-            p{
-                font-size: 2vh;
-                margin-top: 1vh;
-                margin-bottom: 7vh;
-                width: 25vh;
+        }
+        .skills{
+            .spacing{
+                margin-bottom: 0;
+
+                p{
+                    margin-bottom: 1vh;
+                }
+            }
+        }
+    }
+
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:portrait){
+        .col-sm-4{
+            width: 100%;
+        }
+        .skills{
+            .spacing{
+                margin-bottom: 2.5vh;
+            }
+        }
+    }
+
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+        .col-md-12{
+            width: 33.33333333%;
+        }
+        .title{
+            h1{
+                text-align: left;
+            }
+        }
+        .skills{
+            .spacing{
+                margin-bottom: 0;
+
+                p{
+                    margin-bottom: 2vh;
+                }
+            }
+        }
+    }
+    
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait){
+        .skills{
+            .spacing{
+                margin-bottom: 2.5vh;
+            }
+        }
+    }
+
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: portrait){
+        .col-lg-4{
+            width: 100%;
+        }
+        .skills{
+            .spacing{
+                margin-bottom: 2.5vh;
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation:landscape){
+        .title{
+            h1{
+                text-align: left;
+            }
+        }
+        .skills{
+            .tools{
+                a{
+                    font-size: 1.2vw;
+                }
+            }
+        }
+    }
+    @media screen and (min-width:1200px){
+        .title{
+            h1{
+                text-align: left;
             }
         }
     }
@@ -519,26 +914,27 @@ section.websites{
             height: 75vh;
             float: right;
         }
-        
+        &.e-calc{
+            img{
+                height:45vh;
+                float: right;
+            }
+        }
+        &.team-gen{
+            img{
+                height:60vh;
+                float: right;
+            }
+        }
     }
     .images-sub,.images-tab{
         display: none;
     }
-    .e-calc{
-        margin-bottom: 10vh;
-        
-        img{
-            width: 100vh;
-            float: right;
-        }
-    }
+    
     .website-title-sub, .website-title-tab{
         display: none;
     }
-}
-
-@media screen and (max-width:575px){
-    section.websites{
+    @media screen and (max-width:575px){
         .title{
             h1{
                 margin-top: 16vh;
@@ -626,9 +1022,7 @@ section.websites{
             
         }
     }
-}
-@media screen and (min-width:576px) and (max-width:767px){
-    section.websites{
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation: landscape){
         .images{
             img{
                 width: 90vh;
@@ -661,10 +1055,7 @@ section.websites{
             
         }
     }
-    
-}
-@media screen and (min-width:768px) and (max-width:991px){
-    section.websites{
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:portrait){
         .title{
             h1{
                 margin-top: 16vh;
@@ -747,18 +1138,205 @@ section.websites{
             
         }
     }
-}
-@media screen and (min-width:992px) and (max-width:1199px){
-    section.websites{
-        .images{
-            img{
-                width: 70vh;
-                height: 45vh;
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation: portrait){
+        .title{
+            h1{
+                margin-top: 16vh;
+                margin-bottom: 8vh;
+                text-align: center;
             }
         }
-        .e-calc{
+        .website-title{
+            margin-bottom: 0;
+            h1{
+                display: none;
+            }
+        }
+        .images,.e-calc{
+            display: none;
+        }
+        .images-tab{
+            display: block;
+
             img{
-                width: 70vh;
+                @include marginCenterAlign();
+                height: 50vh;
+                margin-bottom: 5vh;
+            }
+        }
+        .website-title-tab{
+            display: block;
+
+            h1{
+                text-align: center;
+                font-size: 3.5vh;
+            }
+            p{
+                font-size: 1.7vh;
+                text-align: center;
+            }
+            p.progLang{
+                text-align: center;
+                font-size: 2vh;
+                margin-top: 4vh;
+                margin-bottom: 10vh;
+
+                a{
+                    border: solid 1px $main-color;
+                    padding: 1vh;
+                    border-radius: 1vh;
+                    margin-right: 1.5vh;
+                }
+            }
+        }
+        .modal{
+            .modal-dialog{
+                .modal-body{
+                    h1{
+                        font-size: 3vh;
+                        margin: 0;
+                    }
+                    p.relDate{
+                        padding: 0;
+                        font-size: 2vh;
+                    }
+                    p.content{
+                        @include marginCenterAlign();
+                        font-size: 2.3vh;
+                        text-align: center;
+                        width:40vh;
+                    }
+                    img{
+                        @include marginCenterAlign();
+                        height: 38vh;
+                        margin-bottom: 5vh;
+                    }
+                }
+                .modal-footer{
+                    .buttons{
+                        @include marginCenterAlign();
+                    }
+                }
+            }
+            
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+        .modal{
+            .modal-dialog{
+                .modal-body{
+                    h1{
+                        text-align: center;
+                        margin-top: 3vh;
+                    }
+                    p.relDate{
+                        text-align: center;
+                    }
+                    p.content{
+                        text-align: center;
+                    }
+                }
+                .modal-footer{
+                    .buttons{
+                        @include marginCenterAlign();
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: portrait){
+        .title{
+            h1{
+                margin-top: 16vh;
+                margin-bottom: 8vh;
+                text-align: center;
+            }
+        }
+        .website-title{
+            margin-bottom: 0;
+            h1{
+                display: none;
+            }
+        }
+        .images,.e-calc{
+            display: none;
+        }
+        .images-tab{
+            display: block;
+
+            img{
+                @include marginCenterAlign();
+                height: 50vh;
+                margin-bottom: 5vh;
+            }
+        }
+        .website-title-tab{
+            display: block;
+
+            h1{
+                text-align: center;
+                font-size: 3.5vh;
+            }
+            p{
+                font-size: 1.7vh;
+                text-align: center;
+            }
+            p.progLang{
+                text-align: center;
+                font-size: 2vh;
+                margin-top: 4vh;
+                margin-bottom: 10vh;
+
+                a{
+                    border: solid 1px $main-color;
+                    padding: 1vh;
+                    border-radius: 1vh;
+                    margin-right: 1.5vh;
+                }
+            }
+        }
+        .modal{
+            .modal-dialog{
+                .modal-body{
+                    h1{
+                        font-size: 3vh;
+                        margin: 0;
+                    }
+                    p.relDate{
+                        padding: 0;
+                        font-size: 2vh;
+                    }
+                    p.content{
+                        @include marginCenterAlign();
+                        font-size: 2.3vh;
+                        text-align: center;
+                        width:40vh;
+                    }
+                    img{
+                        @include marginCenterAlign();
+                        height: 38vh;
+                        margin-bottom: 5vh;
+                    }
+                }
+                .modal-footer{
+                    .buttons{
+                        @include marginCenterAlign();
+                    }
+                }
+            }
+            
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: landscape){
+        .website-title{
+            h1{
+                font-size: 4.5vw;
+            }
+        }
+        .images{
+            img{
+                width: 50vw;
+                height: 50vh;
             }
         }
         .modal{
@@ -771,9 +1349,20 @@ section.websites{
             }
         }
     }
-}
-@media screen and (min-width:1200px) {
-    section.websites{
+    @media screen and (min-width:1200px) {
+        ::-webkit-scrollbar {
+            width: 10px;
+        }
+        ::-webkit-scrollbar-track {
+            background: #000000;
+        }
+        ::-webkit-scrollbar-thumb {
+            background: #000000;
+            border: 1px solid white;
+        }
+        ::-webkit-scrollbar-thumb:hover {
+            background: white;
+        }
         .modal{
             .modal-dialog{
                 .modal-footer{
@@ -789,6 +1378,246 @@ section.websites{
             }
             
         }
+        .overflow{
+            height: 100vh;
+            overflow-y: auto;
+        }
+    }
+}
+
+// Experience Section
+section.experience{
+    .title{
+        h1{
+            @include titleStyle();
+            text-align: center;
+        }
+    }
+    .exp{
+        .exp-date{
+            margin-bottom: 4vh;
+
+            p{
+                font-size: 2.5vh;
+            }
+        }
+        .exp-place{
+            margin-bottom: 7vh;
+
+            h1{
+                font-size: 3.5vh;
+                margin-bottom: 1.5vh;
+            }
+
+            .exp-place-content{
+                margin-bottom: 2.5vh;
+                
+                p{
+                    font-size: 2.3vh;
+                    margin: 0;
+                }
+            }
+            .cert{
+                margin-top: 2vh;
+
+                button{
+                    @include buttonStyle();
+                }
+                .modal{
+                    .modal-dialog{
+                        .modal-content{
+                            @include modalContent();
+                        }
+                        .modal-header{
+                            border: none;
+                            
+                            button{
+                                @include modalXButton();
+                                transition: 0.2s all ease-in-out;
+
+                                &:hover{
+                                    color: rgb(212, 209, 209);
+                                }
+                            }
+                        }
+                        .modal-body{
+                            h1{
+                                font-size: 6vh;
+                                margin: 0;
+                            }
+                            img{
+                                @include marginCenterAlign();
+                                height: 60vh;
+                            }
+                        }
+                        .modal-footer{
+                            a{
+                                @include modalButton();
+                                border-radius: 1vh;
+                                @include contentFontStyle();
+                                font-weight: bold;
+                                padding: 1.5vh;
+                                font-size: 2vh;
+                                transition: 0.2s all ease-in-out;
+
+                                &:hover{
+                                    color: black;
+                                    background-color: white;
+                                }
+                            }
+                        }
+                    }
+                    
+                }
+            }
+        }
+    }
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation: landscape){
+        .title{
+            h1{
+                text-align: left;
+            }
+        }
+        .exp{
+            p.exp-date{
+                font-size: 2.7vh;
+            }
+            .exp-place{
+                .cert{
+                    button{
+                        font-size: 1.5vw;
+                    }
+                    .modal{
+                        .modal-dialog{
+                            .modal-footer{
+                                a{
+                                    font-size: 3vh;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:portrait){
+        .col-sm-6{
+            width: 100%;
+        }
+        .exp{
+            p.exp-date{
+                font-size: 3.9vw;
+            }
+            .exp-place{
+                .cert{
+                    button{
+                        font-size: 3.3vw;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:portrait){
+        .exp{
+            p.exp-date{
+                font-size: 3.6vw;
+            }
+            .exp-place{
+                .cert{
+                    button{
+                        font-size: 3.3vw;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+        .title{
+            h1{
+                text-align: left;
+            }
+        }
+        .exp{
+            &.col-md-12{
+                width: 50%;
+            }
+            p.exp-date{
+                font-size: 1.5vw;
+            }
+            .exp-place{
+                .cert{
+                    button{
+                        font-size: 1.4vw;
+                    }
+                    .modal{
+                        .modal-dialog{
+                            .modal-footer{
+                                a{
+                                    font-size: 3vh;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: portrait){
+        .col-lg-6{
+            width: 100%;
+        }
+        .exp{
+            p.exp-date{
+                font-size: 3.5vw;
+            }
+            .exp-place{
+                .cert{
+                    button{
+                        font-size: 3vw;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: landscape){
+        .title{
+            h1{
+                text-align: left;
+            }
+        }
+        .exp{
+            p.exp-date{
+                font-size: 2vw;
+            }
+            .exp-place{
+                .cert{
+                    button{
+                        font-size: 2vw;
+                    }
+                }
+            }
+        }
+    }
+    @media screen and (min-width:1200px){
+        .title{
+            h1{
+                text-align: left;
+            }
+        }
+        .exp{
+            .exp-place{
+                .cert{
+                    button{
+                        transition: 0.2s all ease-in-out;
+
+                        &:hover{
+                            color: black;
+                            background-color: white;
+                        }
+                    }
+                }
+            }
+        }
     }
 }
 
@@ -797,7 +1626,7 @@ section.contact-us{
     .title{
         h1{
             @include titleStyle();
-            margin-top: 30vh;
+            margin-top: 10vh;
         }
     }
     .form{
@@ -813,6 +1642,11 @@ section.contact-us{
             
             &:focus{
                 outline: none;
+            }
+            &::placeholder{
+                text-align: right;
+                color: red;
+                font-size: 1.7vh;
             }
         }
         textarea{
@@ -837,13 +1671,9 @@ section.contact-us{
             @include marginCenterAlign();
         }
     }
-}
-
-@media screen and (max-width:575px){
-    section.contact-us{
+    @media screen and (max-width:575px){
         .title{
             h1{
-                margin-top: 16vh;
                 text-align: center;
             }
         }
@@ -866,11 +1696,9 @@ section.contact-us{
         .image{
             display: none;
         }
+        
     }
-}
-
-@media screen and (min-width:576px) and (max-width:767px){
-    section.contact-us{
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation: landscape){
         .form{
             input,textarea{
                 width: 100%;
@@ -881,15 +1709,37 @@ section.contact-us{
         }
         .image{
             img{
-                margin-top: 50vh;
+                margin-top: 20vh;
                 height: 80vh;
             }
         }
     }
-}
-
-@media screen and (min-width:768px) and (max-width:991px){
-    section.contact-us{
+    @media screen and (min-width:576px) and (max-width:767px) and (orientation:portrait){
+        .col-sm-6{
+            width: 100%;
+        }
+        .title{
+            h1{
+                text-align: center;
+            }
+        }
+        .form{
+            input,textarea{
+                width: 100%;
+            }
+            p{
+                text-align: center;
+            }
+            button.send{
+                @include marginCenterAlign();
+                font-size: 2.5vh;
+            }
+        }
+        .image{
+            display: none;
+        }
+    }
+    @media screen and (min-width:768px) and (max-width:991px){
         .title{
             h1{
                 margin-top: 16vh;
@@ -917,10 +1767,69 @@ section.contact-us{
             display: none;
         }
     }
-}
-
-@media screen and (min-width:992px) and (max-width:1199px){
-    section.contact-us{
+    @media screen and (min-width:768px) and (max-width:991px) and (orientation: landscape){
+        .col-md-12{
+            width: 50%;
+        }
+        .title{
+            h1{
+                text-align: left;
+            }
+        }
+        .form{
+            p{
+                text-align: left;
+            }
+            input,textarea,button{
+                display: inline;
+                width: 100%;
+            }
+            button{
+                font-size: 2.5vh;
+                width: 15%;
+            }
+        }
+        .image{
+            display: block;
+            
+            img{
+                margin-top: 10vh;
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: portrait){
+        .image{
+            display: none;
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: portrait){
+        .col-lg-5{
+            width: 100%;
+        }
+        .title{
+            h1{
+                text-align: center;
+            }
+        }
+        .form{
+            p{
+                text-align: center;
+            }
+            input,textarea,button{
+                @include marginCenterAlign();
+                width: 85%;
+            }
+            button{
+                font-size: 2.5vh;
+                width: 20%;
+            }
+            span{
+                display: table;
+                margin: auto;
+            }
+        }
+    }
+    @media screen and (min-width:992px) and (max-width:1199px) and (orientation: landscape){
         .form{
             button.send{
                 font-size: 3vh;
@@ -932,23 +1841,15 @@ section.contact-us{
         }
         .image{
             img{
-                margin-top: 40vh;
+                margin-top: 20vh;
                 height: 70vh;
             }
         }
     }
-}
-
-@media screen and (min-width:1200px) {
-    section.contact-us{
-        .form{
-            button{
-                transition: 0.3s ease-in-out;
-
-                &:hover{
-                    background-color: white;
-                    color: black;
-                }
+    @media screen and (min-width:1200px) {
+        .image{
+            img{
+                margin-top: 20vh;
             }
         }
     }
@@ -1017,597 +1918,4 @@ footer{
     }
 
     
-}
-
-// Profile Section
-section.about-hero{
-    .title,.title-sub{
-        h1{
-            font-size: 7.5vh;
-            margin-top: 22vh;
-        }
-        p.nickname{
-            font-size: 3vh;
-            font-weight: 700;
-        }
-        p.content{
-            font-size: 2.3vh;
-            line-height: 4vh;
-        }
-        .buttons-about{
-            margin-top: 5vh;
-
-            button{
-                @include buttonStyle();
-                font-weight: 400;
-                margin-right: 2vh;
-                transition: 0.3s ease-in-out;
-                
-                &:hover{
-                    background-color: white;
-                    color: black;
-                }
-                strong{
-                    font-family: $font-style-heading;
-                    margin-right: 0.5vh;
-                }
-            }
-        }
-    }
-    .image{
-        margin-top: 15vh;
-
-        img{
-            height: 83vh;
-        }
-    }
-    .title-sub{
-        display: none;
-    }
-}
-
-@media screen and (max-width:575px){
-    section.about-hero{
-        .title{
-            display: none;
-        }
-        .title-sub{
-            display: block;
-
-            h1{
-                margin-top: 0vh;
-                font-size: 5.5vh;
-            }
-            p.content{
-                width: 50vh;
-                line-height: 4.5vh;
-                font-size: 2.3vh;
-            }
-            .buttons-about{
-                button{
-                    margin-bottom: 2vh;
-                    margin-right: 0;
-                }
-            }
-        }
-        .image{
-            img{
-                height: 50vh;
-                width: 100%;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:576px) and (max-width:767px){
-    section.about-hero{
-        .title{
-            h1{
-                margin-top: 20vh;
-            }
-        }
-        .buttons-about{
-            margin-top: 5vh;
-
-            button{
-                margin-right: 2vh;
-                padding: 2vh;
-                font-size: 2.5vh;
-            }
-        }
-        .image{
-            img{
-                height: 70vh;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:991px){
-    section.about-hero{
-        .title{
-            display: none;
-        }
-        .title-sub{
-            display: block;
-
-            h1{
-                margin-top: 0vh;
-                font-size: 5.5vh;
-            }
-            p.content{
-                width: 60vh;
-                line-height: 4.5vh;
-                font-size: 2.3vh;
-            }
-            .buttons-about{
-                button{
-                    margin-bottom: 2vh;
-                    margin-right: 0;
-                    font-size: 3vh;
-                }
-            }
-        }
-        .image{
-            width: 100%;
-            img{
-                display: block;
-                margin-left: auto;
-                margin-right: auto;
-                height: 50vh;
-                width: 70%;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:992px) and (max-width:1199px){
-    section.about-hero{
-        .image{
-            img{
-                float: right;
-                height: 64vh;
-            }
-        }
-        .title{
-            h1{
-                font-size: 5.5vh;
-                margin-top: 20vh;
-            }
-            p.nickname{
-                font-size: 2.5vh;
-            }
-            p.content{
-                font-size: 2vh;
-            }
-            .buttons-about{
-                margin-top: 5vh;
-                width: 100vh;
-
-                button{
-                    margin-right: 2vh;
-                    @include buttonStyle();
-                    font-weight: 400;
-                    
-                    strong{
-                        font-family: $font-style-heading;
-                        margin-right: 0.5vh;
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width:1200px){
-    section.about-hero{
-        .image{
-            img{
-                float: right;
-            }
-        }
-    }
-}
-
-// Skills and Experiences Section
-section.skill-exp{
-    .skills{
-        .title{
-            h1{
-                @include titleStyle();
-            }
-        }
-        .skill-title{
-            margin-bottom: 5vh;
-
-            h1{
-                font-size: 3.5vh;
-                font-family: $font-style-heading;
-                font-weight: bold;
-                color: $main-color;
-                margin: 0;
-            }
-        }
-        .tools{
-            a{
-                @include programmingLanguage();
-            }
-            a.mcss,a.js,a.figma,a.git{
-                margin-right: 0;
-            }
-        }
-        .des,.ver{
-            margin-top: 10vh;
-        }
-    }
-    .exp{
-        .title{
-            h1{
-                @include titleStyle();
-            }
-        }
-        .exp-date{
-            display: none;
-            margin-bottom: 7vh;
-
-            h1{
-                font-size: 2.5vh;
-                font-weight: 500;
-            }
-        }
-        .exp-place{
-            margin-bottom: 7vh;
-
-            h1{
-                font-size: 3.5vh;
-                margin-bottom: 1.5vh;
-            }
-
-            .exp-place-content{
-                margin-bottom: 2.5vh;
-                
-                p{
-                    font-size: 2.3vh;
-                    margin: 0;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (max-width:575px){
-    section.skill-exp{
-        .skills{
-            .title,.skill-title{
-                h1{
-                    text-align: center;
-                }
-            }
-            .tools{
-                p{
-                    text-align: center;
-                }
-            }
-        }
-        .exp{
-            .title{
-                h1{
-                    text-align: center;
-                }
-            }
-            .exp-date{
-                margin-bottom: 0;
-                
-                h1{
-                    display: none;
-                }
-            }
-            .exp-place{
-                @include marginCenterAlign();
-                width: 53vh;
-                margin-bottom: 0;
-
-                &.kodego{
-                    margin-bottom: 5vh;
-                }
-                h1.exp-date{
-                    display: block;
-                    font-weight: 400;
-                    font-size: 2.6vh;
-                    margin-bottom: 2.5vh;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width:576px) and (max-width:767px){
-    section.skill-exp{
-        .skills{
-            .title{
-                h1{
-                    margin-top: 20vh;
-                }
-            }
-            .tools{
-                p{
-                    line-height: 3.5vh;
-                }
-            }
-        }
-        .exp{
-            .title{
-                h1{
-                    margin-top: 20vh;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:991px){
-    section.skill-exp{
-        .skills{
-            .title,.skill-title{
-                h1{
-                    text-align: center;
-                }
-            }
-            .tools{
-                p{
-                    text-align: center;
-                    font-size: 2vh;
-                    margin-top: 4vh;
-                    margin-bottom: 10vh;
-                    
-                    a{
-                        border: solid 1px $main-color;
-                        padding: 1vh;
-                        border-radius: 1vh;
-                        margin-right: 1.5vh;
-                    }
-                }
-                span{
-                    margin-top: 90vh;
-                }
-            }
-        }
-        .exp{
-            .title{
-                h1{
-                    text-align: center;
-                }
-            }
-            .exp-date{
-                margin-bottom: 0;
-                
-                h1{
-                    display: none;
-                }
-            }
-            .exp-place{
-                @include marginCenterAlign();
-                width: 65vh;
-                margin-bottom: 0;
-
-                &.kodego{
-                    margin-bottom: 5vh;
-                }
-                h1.exp-date{
-                    display: block;
-                    font-weight: 400;
-                    font-size: 2.6vh;
-                    margin-bottom: 2.5vh;
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width:992px) and (max-width:1199px){
-    section.skill-exp{
-        margin-top: 5vh;
-    }
-}
-
-// Hobbies and Certification Section
-section.hobbies-cert{
-    .hobbies{
-        h1{
-            @include titleStyle();
-            margin-bottom: 5vh;
-        }
-        p{
-            a{
-                @include programmingLanguage();
-            }
-        }
-    }
-    .cert{
-        .title{
-            h1{
-                @include titleStyle();
-                margin-bottom: 5vh;
-            }
-        }
-        .cert-date{
-            h1{
-                font-size: 2.5vh;
-                font-weight: 500;
-            }
-        }
-        .cert-place{
-            h1{
-                font-size: 3.5vh;
-                margin-bottom: 1.5vh;
-            }
-            h1.cert-date{
-                display: none;
-            }
-
-            .cert-place-content{
-                p{
-                    font-size: 2.3vh;
-                    margin: 0;
-                }
-                a{
-                    @include programmingLanguage();
-                    transition: 0.3s ease-in-out;
-
-                    &:hover{
-                        background-color: white;
-                        color: black;
-                    }
-                }
-
-                &.a{
-                    margin-top: 3vh;
-                }
-            }
-            .modal{
-                .modal-dialog{
-                    .modal-content{
-                        @include modalContent();
-                    }
-                    .modal-header{
-                        border: none;
-                        
-                        button{
-                            @include modalXButton();
-                        }
-                    }
-                    .modal-body{
-                        h1{
-                            font-size: 6vh;
-                            margin: 0;
-                        }
-                        img{
-                            @include marginCenterAlign();
-                            height: 60vh;
-                        }
-                    }
-                }
-                
-            }
-        }
-    }
-}
-
-@media screen and (max-width:575px){
-    section.hobbies-cert{
-        .hobbies{
-            h1{
-                text-align: center;
-            }
-            p{
-                text-align: center;
-
-                a.biking,a.watch,a.games{
-                    margin-right: 0;
-                }
-            }
-        }
-        .cert{
-            .title{
-                h1{
-                    text-align: center;
-                    margin-bottom: 12vh;
-                }
-            }
-            .cert-date{
-                h1{
-                    display: none;
-                }
-            }
-            .cert-place{
-                @include marginCenterAlign();
-                width: 53vh;
-
-                h1.cert-date{
-                    display: block;
-                    font-weight: 400;
-                    font-size: 2.6vh;
-                    margin-bottom: 2.5vh;
-                }
-                .modal{
-                    .modal-dialog{
-                        .modal-body{
-                            img{
-                                height: 30vh;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
-}
-
-@media screen and (min-width:576px) and (max-width:767px){
-    section.hobbies-cert{
-        .hobbies{
-            p{
-                line-height: 3.5vh;
-            }
-        }
-    }
-}
-
-@media screen and (min-width:768px) and (max-width:991px){
-    section.hobbies-cert{
-        .hobbies{
-            h1{
-                text-align: center;
-            }
-            p{
-                text-align: center;
-                font-size: 2vh;
-                margin-top: 4vh;
-                margin-bottom: 10vh;
-                
-                a{
-                    border: solid 1px $main-color;
-                    padding: 1vh;
-                    border-radius: 1vh;
-                    margin-right: 1.5vh;
-                }
-                a.biking,a.watch,a.games{
-                    margin-right: 0;
-                }
-            }
-        }
-        .cert{
-            .title{
-                h1{
-                    text-align: center;
-                    margin-bottom: 12vh;
-                }
-            }
-            .cert-date{
-                h1{
-                    display: none;
-                }
-            }
-            .cert-place{
-                @include marginCenterAlign();
-                width: 53vh;
-
-                h1.cert-date{
-                    display: block;
-                    font-weight: 400;
-                    font-size: 2.6vh;
-                    margin-bottom: 2.5vh;
-                }
-                .modal{
-                    .modal-dialog{
-                        .modal-body{
-                            img{
-                                height: 30vh;
-                            }
-                        }
-                    }
-                }
-            }
-        }
-    }
 }

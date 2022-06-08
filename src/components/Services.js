@@ -3,10 +3,10 @@ import ServiceLayout from './ServiceLayout'
 
 const Services = () => {
     return (
-        <section className="services">
+        <section className="services" id="scrollspyServices">
             <div className="container">
                 <div className="row">
-                    <div className="col-12 title">
+                    <div data-aos="fade-right" className="col-12 title">
                         <h1>What I do?</h1>
                     </div>
                     <ServiceLayout
