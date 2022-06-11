@@ -22,7 +22,7 @@ const Hero = () => {
                                     </div>
                                     <div className="col-12 buttons hero" >
                                         <a href='#buttonWebsite'><button>Websites</button></a>
-                                        <a className='me-0' href='https://drive.google.com/file/d/1m4xTBFb9VLildJ3mj4uA9EZh99pvy5EP/view?usp=sharing' target={'_blank'} rel="noreferrer noopener" download><button>Resume</button></a>
+                                        <a className='me-0' href='https://drive.google.com/file/d/1RkaEwcU92PYMMlCJAnnKWJVgydJ6nSKx/view?usp=sharing' target={'_blank'} rel="noreferrer noopener" download><button>Resume</button></a>
                                     </div>
                                     </Fade>
                                 </div>
