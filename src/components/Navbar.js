@@ -9,7 +9,7 @@ const Navbar = () => {
                     <a href="#scrollspyServices">Services</a>
                     <a href="#scrollspySkills">Skills</a>
                     <a href="#buttonWebsite">Websites</a>
-                    <a href="#scrollspyExperiences">Experiences</a>
+                    <a href="#scrollspyExperiences">Experience</a>
                     <a href="#scrollspyContacts">Contact Us</a>
                 </nav>
                 <button className="btn" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><i className="bi bi-list"></i></button>
@@ -22,7 +22,7 @@ const Navbar = () => {
                             <li><a href="#scrollspyServices">Services</a></li>
                             <li><a href="#scrollspySkills">Skills</a></li>
                             <li><a href="#buttonWebsite">Websites</a></li>
-                            <li><a href="#scrollspyExperiences">Experiences</a></li>
+                            <li><a href="#scrollspyExperiences">Experience</a></li>
                             <li><a href="#scrollspyContacts">Contact Us</a></li>
                         </ul>
                     </div>

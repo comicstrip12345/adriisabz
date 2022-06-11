@@ -12,6 +12,21 @@ const ModalVersion = (props) => {
                     </div>
                     <div className="modal-body">
                         <VersionList
+                            ver="v.2.2.2"
+                            relDate="June 11, 2022"
+                            author="Adriano Sabanal Jr."
+                            details={<Fragment>
+                                <strong>1. </strong>Added Work Experience Section<br/>
+                                <strong>2. </strong>Change "Experiences" to "Experience" on Navbar.<br/>
+                            </Fragment>}
+                        />
+                        <VersionList
+                            ver="v.2.2.1"
+                            relDate="June 11, 2022"
+                            author="Adriano Sabanal Jr."
+                            details="Updated Resume Form"
+                        />
+                        <VersionList
                             ver="v.2.2.0"
                             relDate="June 8, 2022"
                             author="Adriano Sabanal Jr."

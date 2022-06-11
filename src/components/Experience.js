@@ -8,7 +8,7 @@ const Experience = () => {
             <div className="container">
                 <div className="row">
                     <div data-aos="fade-right" className="col-12 title">
-                        <h1>Coding Experiences</h1>
+                        <h1>Coding Experience</h1>
                     </div>
                     <ExperienceList
                         name="KodeGo"
@@ -37,6 +37,7 @@ const Experience = () => {
                             <p>- has created 5 websites.</p>
                         </Fragment>}
                     >
+                        <button data-bs-toggle="modal" data-bs-target="#kodeGoCert">View Certificate</button>
                         <ModalCert
                             id="kodeGoCert" 
                             img={require('../images/kodego-cert.PNG')}
@@ -63,11 +64,33 @@ const Experience = () => {
                             <p>- has created 1 website.</p>
                         </Fragment>}
                     >
+                        <button data-bs-toggle="modal" data-bs-target="#tesdaCert">View Certificate</button>
                         <ModalCert
                             id="tesdaCert" 
                             img={require('../images/tesda-cert.PNG')}
                             link="https://drive.google.com/file/d/1vKd_9Jtk8n3DpbUPEuxlmaB5maa0EFdm/view?usp=sharing"
                         />
+                    </ExperienceList>
+                    <div data-aos="fade-right" className="col-12 title">
+                        <h1>Work Experience</h1>
+                    </div>
+                    <ExperienceList
+                        name="Aircraft Engineering and Consultancy Ltd."
+                        timeline="January. 2022 - October 2022"
+                        position="Intern"
+                        specialization="Aircraft Technical Records"
+                        industry="Aviation"
+                        modalID="#kodeGoCert"
+                        description={<Fragment>
+                            <p>- Organization and safekeeping of all aircraft technical records</p>
+                            <p>
+                                - Auditing and scanning of completed work packages
+                            </p>
+                            <p>
+                                - Administering technical records and archives per regulatory requirements
+                            </p>
+                        </Fragment>}
+                    >
                     </ExperienceList>
                 </div>
             </div>

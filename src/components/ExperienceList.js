@@ -22,7 +22,6 @@ const ExperienceList = (props) => {
                             {props.description}
                         </div>
                         <div data-aos="fade-down" className='col-7 col-xl-4 cert'>
-                            <button data-bs-toggle="modal" data-bs-target={`${props.modalID}`}>View Certificate</button>
                             {props.children}
                         </div>
                     </div>
