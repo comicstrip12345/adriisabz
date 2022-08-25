@@ -1,4 +1,4 @@
-import React from 'react'
+import React,{useEffect, useState} from 'react'
 import Navbar from './Navbar';
 import Hero from './Hero';
 import ScrolltoTopButton from './ScrolltoTopButton'
@@ -10,17 +10,32 @@ import ContactUs from './ContactUs';
 import Footer from './Footer';
 
 const HomePage = () => {
+    const [loading,setLoading] = useState(true)
+    useEffect(()=>{
+        setLoading(false)
+    },[])
     return (
         <>
-            <ScrolltoTopButton/>
-            <Navbar/>
-            <Hero/>
-            <Services/>
-            <Skills/>
-            <Website/>
-            <Experience/>
-            <ContactUs/>
-            <Footer/>
+            {loading && 
+                <section className='loading'>
+                    <div className='col-12 loadingHead'>
+                                <h1>LOADING.....</h1>
+                            </div>
+                </section>
+            }
+            {!loading &&
+                <>
+                    <ScrolltoTopButton/>
+                    <Navbar/>
+                    <Hero/>
+                    <Services/>
+                    <Skills/>
+                    <Website/>
+                    <Experience/>
+                    <ContactUs/>
+                    <Footer/>
+                </>
+            }
         </>
     )
 }

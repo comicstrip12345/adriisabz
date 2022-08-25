@@ -12,6 +12,20 @@ const ModalVersion = (props) => {
                     </div>
                     <div className="modal-body">
                         <VersionList
+                            ver="v.2.2.3"
+                            relDate="August 19, 2022"
+                            author="Adriano Sabanal Jr."
+                            details={<Fragment>
+                                <strong>1. </strong>Added Working Projects Modal beside "Websites" Title.<br/>
+                                <strong>2. </strong>Added Simple Loading Screen.<br/>
+                                <strong>3. </strong>Added Another Work Experience.<br/>
+                                <strong>4. </strong>Change position title from Hero Section.<br/>
+                                <strong>5. </strong>Added Skills "Redux" and "NextJS".<br/>
+                                <strong>6. </strong>Changed year from "2022" to "2020" in Work Experience Section.<br/>
+                                <strong>7. </strong>Added Education in Navbar, and changed "Coding Experience" section title to "Education".<br/>
+                            </Fragment>}
+                        />
+                        <VersionList
                             ver="v.2.2.2"
                             relDate="June 11, 2022"
                             author="Adriano Sabanal Jr."

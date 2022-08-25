@@ -119,6 +119,19 @@ button.scrollUp{
     }
 }
 
+// Loading Section
+section.loading{
+    .loadingHead{
+        position: fixed;
+        bottom: 50%;
+
+        h1{
+            @include headingFontBoldStyle();
+            text-align: center;
+        }
+    }
+}
+
 // Navbar Section
 nav{
     background-color: $background-color;
@@ -836,6 +849,15 @@ section.websites{
         h1{
             @include titleStyle();
             margin-top: 20vh;
+
+            button{
+                background: none;
+                border: none;
+
+                i{
+                    color: $main-color;
+                }
+            }
         }
     }
     .website-title{
@@ -879,6 +901,11 @@ section.websites{
                     height: 5vh;
                     font-size: 4vh;
                 }
+                h1{
+                    font-size: 5vh;
+                    margin: 0;
+                    padding: 2vh;
+                }
             }
             .modal-body{
                 h1{
@@ -896,6 +923,41 @@ section.websites{
                 img{
                     @include marginCenterAlign();
                     height: 50vh;
+                }
+                .projects{
+                    padding: 4vh;
+                    padding-top: 2vh;
+                    padding-bottom: 2vh;
+            
+                    .projCard{
+                        padding: 4vh;
+                        border: 1px solid $main-color;
+            
+                        .details{
+                            h2{
+                                @include headingFontBoldStyle();
+                                font-size: 4vh
+                            }
+                            p{
+                                font-size: 2.5vh;
+                                margin: 0;
+                            }
+                            h3{
+                                @include headingFontBoldStyle();
+                                font-size: 2.8vh
+                            }
+
+                            @media screen and (max-width:575px) {
+                                margin-bottom: 3vh;
+                            }
+                        }
+                        .prgsbar{
+                            height: 15vh;
+                            width: 15vh;
+                            margin: auto;
+                            padding: 0;
+                        }
+                    }
                 }
             }
             .modal-footer{
@@ -940,6 +1002,19 @@ section.websites{
                 margin-top: 16vh;
                 margin-bottom: 8vh;
                 text-align: center;
+            }
+        }
+        .modal{
+            .modal-dialog{
+                .modal-body{
+                    .projects{
+                        .projCard{
+                            .details{
+                                margin-bottom: 3vh;
+                            }
+                        }
+                    }
+                }
             }
         }
         .website-title{
@@ -1056,6 +1131,9 @@ section.websites{
         }
     }
     @media screen and (min-width:576px) and (max-width:767px) and (orientation:portrait){
+        .col-sm-4{
+            width: 100%;
+        }
         .title{
             h1{
                 margin-top: 16vh;
@@ -1127,6 +1205,13 @@ section.websites{
                         @include marginCenterAlign();
                         height: 38vh;
                         margin-bottom: 5vh;
+                    }
+                    .projects{
+                        .projCard{
+                            .details{
+                                margin-bottom: 3vh;
+                            }
+                        }
                     }
                 }
                 .modal-footer{
@@ -1211,6 +1296,13 @@ section.websites{
                         height: 38vh;
                         margin-bottom: 5vh;
                     }
+                    .projects{
+                        .projCard{
+                            .details{
+                                margin-bottom: 3vh;
+                            }
+                        }
+                    }
                 }
                 .modal-footer{
                     .buttons{
@@ -1222,6 +1314,9 @@ section.websites{
         }
     }
     @media screen and (min-width:768px) and (max-width:991px) and (orientation:landscape){
+        .col-md-12{
+            width: 33.33333333%;
+        }
         .modal{
             .modal-dialog{
                 .modal-body{
@@ -1235,6 +1330,13 @@ section.websites{
                     p.content{
                         text-align: center;
                     }
+                    .projects{
+                        .projCard{
+                            .details{
+                                margin-bottom: 3vh;
+                            }
+                        }
+                    }
                 }
                 .modal-footer{
                     .buttons{
@@ -1245,6 +1347,9 @@ section.websites{
         }
     }
     @media screen and (min-width:992px) and (max-width:1199px) and (orientation: portrait){
+        .col-lg-4{
+            width: 100%;
+        }
         .title{
             h1{
                 margin-top: 16vh;
@@ -1317,6 +1422,13 @@ section.websites{
                         height: 38vh;
                         margin-bottom: 5vh;
                     }
+                    .projects{
+                        .projCard{
+                            .details{
+                                margin-bottom: 3vh;
+                            }
+                        }
+                    }
                 }
                 .modal-footer{
                     .buttons{
@@ -1381,6 +1493,36 @@ section.websites{
         .overflow{
             height: 100vh;
             overflow-y: auto;
+        }
+    }
+}
+
+// Working Projects
+section.wrkngproj{
+    .title{
+        h1{
+            @include titleStyle();
+            margin-top: 20vh;
+            margin-bottom: 8vh;
+        }
+    }
+    .projects{
+        padding: 4vh;
+
+        .projCard{
+            padding: 5vh;
+            border: 1px solid $main-color;
+
+            h2{
+                @include headingFontBoldStyle();
+                font-size: 4vh
+            }
+            p{
+                font-size: 2.5vh;
+            }
+            @media screen and (min-width:576px) and (max-width:767px) and (orientation: landscape){
+
+            }
         }
     }
 }

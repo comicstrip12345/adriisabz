@@ -13,7 +13,7 @@ const Hero = () => {
                                 <div className="carousel-item active">
                                     <Fade left>
                                     <h1 className='hero'>Adriano Sabanal Jr.</h1>
-                                    <p className="skill">Front-end Web Developer and Web Designer</p>
+                                    <p className="skill">ReactJS Engineer at Collabera Philippines</p>
                                     <div className="col-12 socmed">
                                         <a href="https://www.facebook.com/adriisabz/"><img src={require("../images/socmed/facebook.png")} alt="fb"/></a>
                                         <a href="https://twitter.com/comicstrip12345"><img src={require("../images/socmed/twitter.png")} alt="twitter"/></a>
@@ -34,7 +34,7 @@ const Hero = () => {
                                         In my freetime, I take photos on everywhere, creating websites to increase my knowledge in coding, and riding a bike elsewhere.
                                     </p>
                                     <div className="buttons profile">
-                                        <button><strong>4+</strong> Months of Experience</button>
+                                        <button><strong>6+</strong> Months of Experience</button>
                                         <a href='#buttonWebsite'><button><strong>7</strong>  Projects Finished</button></a>
                                     </div>
                                 </div>

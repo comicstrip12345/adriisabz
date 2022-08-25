@@ -9,6 +9,7 @@ const Navbar = () => {
                     <a href="#scrollspyServices">Services</a>
                     <a href="#scrollspySkills">Skills</a>
                     <a href="#buttonWebsite">Websites</a>
+                    <a href="#scrollspyEducation">Education</a>
                     <a href="#scrollspyExperiences">Experience</a>
                     <a href="#scrollspyContacts">Contact Us</a>
                 </nav>
@@ -22,6 +23,7 @@ const Navbar = () => {
                             <li><a href="#scrollspyServices">Services</a></li>
                             <li><a href="#scrollspySkills">Skills</a></li>
                             <li><a href="#buttonWebsite">Websites</a></li>
+                            <li><a href="#scrollspyEducation">Education</a></li>
                             <li><a href="#scrollspyExperiences">Experience</a></li>
                             <li><a href="#scrollspyContacts">Contact Us</a></li>
                         </ul>

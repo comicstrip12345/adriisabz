@@ -32,63 +32,61 @@ button.scrollUp {
   background: none;
   border: none;
 }
-
 button.scrollUp i {
   color: white;
   font-size: 5vh;
+}
+section.loading .loadingHead {
+  position: fixed;
+  bottom: 50%;
+}
+section.loading .loadingHead h1 {
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  text-align: center;
 }
 
 nav {
   background-color: black;
 }
-
 nav .container {
   border-bottom: solid 1px white;
 }
-
 nav h1 {
   font-size: 3vh;
   padding-top: 2vh;
   padding-bottom: 2vh;
   margin-bottom: 0;
 }
-
 nav h1 a {
   transition: 0.3s ease-in-out;
 }
-
 nav h1 a:hover {
-  color: #9c9c9c;
+  color: rgb(156, 156, 156);
 }
-
 nav nav.nav {
   display: none;
 }
-
 nav button.btn i {
   color: white;
   font-size: 3vh;
 }
-
 nav .offcanvas {
   width: 75%;
   background-color: black;
   font-family: Poppins;
   font-size: 3vh;
 }
-
 nav .offcanvas .offcanvas-header button.btn-close {
   margin-top: 1vh;
 }
-
 nav .offcanvas .offcanvas-body ul {
   list-style-type: none;
 }
-
 nav .offcanvas .offcanvas-body ul li {
   margin-bottom: 3vh;
 }
-
 @media screen and (max-width: 575px) {
   nav h1 {
     font-size: 2.5vh;
@@ -97,7 +95,6 @@ nav .offcanvas .offcanvas-body ul li {
     font-size: 1.5vh;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
   nav button.btn {
     display: none;
@@ -114,16 +111,14 @@ nav .offcanvas .offcanvas-body ul li {
     margin-left: 8vh;
   }
   nav nav.nav a:hover {
-    color: #9c9c9c;
+    color: rgb(156, 156, 156);
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) {
   nav .offcanvas {
     width: 50%;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
   nav button.btn {
     display: none;
@@ -140,10 +135,9 @@ nav .offcanvas .offcanvas-body ul li {
     margin-left: 8vh;
   }
   nav nav.nav a:hover {
-    color: #9c9c9c;
+    color: rgb(156, 156, 156);
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
   nav button.btn {
     display: none;
@@ -160,10 +154,9 @@ nav .offcanvas .offcanvas-body ul li {
     margin-left: 8vh;
   }
   nav nav.nav a:hover {
-    color: #9c9c9c;
+    color: rgb(156, 156, 156);
   }
 }
-
 @media screen and (min-width: 1200px) {
   nav button.btn {
     display: none;
@@ -181,7 +174,7 @@ nav .offcanvas .offcanvas-body ul li {
     margin-left: 8vh;
   }
   nav nav.nav a:hover {
-    color: #9c9c9c;
+    color: rgb(156, 156, 156);
   }
 }
 
@@ -194,49 +187,38 @@ section.hero {
   background-position: 35% 5%;
   background-size: 90%;
 }
-
 section.hero .title {
   margin-top: 50vh;
   text-align: center;
 }
-
 section.hero .title h1 {
   font-size: 8.5vw;
 }
-
 section.hero .title p.skill {
   font-size: 5vw;
 }
-
 section.hero .title .carousel {
   position: static;
 }
-
 section.hero .title .carousel .socmed {
   text-align: center;
 }
-
 section.hero .title .carousel .socmed a {
   margin-right: 4vh;
 }
-
 section.hero .title .carousel .socmed a.github {
   margin-right: 0;
 }
-
 section.hero .title .carousel .socmed a img {
   height: 3.5vh;
 }
-
 section.hero .title .carousel .buttons {
   margin-top: 6vh;
   text-align: center;
 }
-
 section.hero .title .carousel .buttons a {
   margin-right: 2vh;
 }
-
 section.hero .title .carousel .buttons button {
   padding: 2vh;
   color: white;
@@ -246,26 +228,21 @@ section.hero .title .carousel .buttons button {
   font-family: Quicksand;
   font-weight: bold;
 }
-
 section.hero .title .carousel .buttons.hero button {
   width: 17vh;
 }
-
 section.hero .title .carousel .buttons.profile button {
   font-weight: 400;
   margin-right: 2vh;
 }
-
 section.hero .title .carousel .carousel-indicators {
   display: none;
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
   section.hero .col-sm-7 {
     width: 100%;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
   section.hero {
     background-image: url("./images/hero-pic.png");
@@ -308,7 +285,6 @@ section.hero .title .carousel .carousel-indicators {
     font-size: 1.5vw;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
   section.hero {
     background-size: 70%;
@@ -329,7 +305,6 @@ section.hero .title .carousel .carousel-indicators {
     font-size: 3vw;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
   section.hero {
     background-image: url("./images/hero-pic.png");
@@ -375,7 +350,6 @@ section.hero .title .carousel .carousel-indicators {
     font-size: 1.5vw;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
   section.hero .col-lg-7 {
     width: 100%;
@@ -384,7 +358,6 @@ section.hero .title .carousel .carousel-indicators {
     font-size: 3.5vw;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
   section.hero {
     background-image: url("./images/hero-pic.png");
@@ -433,7 +406,6 @@ section.hero .title .carousel .carousel-indicators {
     bottom: 0;
   }
 }
-
 @media screen and (min-width: 1200px) {
   section.hero {
     background-image: url("./images/hero-pic.png");
@@ -489,7 +461,6 @@ section.services .title h1 {
   margin-bottom: 8vh;
   text-align: center;
 }
-
 section.services .list-services img {
   display: block;
   margin-left: auto;
@@ -497,14 +468,12 @@ section.services .list-services img {
   height: 12vh;
   margin-top: 3vh;
 }
-
 section.services .list-services h1 {
   font-size: 3vh;
   text-align: center;
   margin-top: 3vh;
   margin-bottom: 0vh;
 }
-
 section.services .list-services p {
   display: block;
   margin-left: auto;
@@ -514,7 +483,6 @@ section.services .list-services p {
   width: 50vw;
   text-align: center;
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
   section.services .title h1 {
     text-align: left;
@@ -525,7 +493,6 @@ section.services .list-services p {
     width: 16vw;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
   section.services .col-sm-4 {
     width: 100%;
@@ -535,14 +502,12 @@ section.services .list-services p {
     font-size: 3vw;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
   section.services .list-services p {
     font-size: 3vw;
     width: 40vw;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
   section.services .col-md-12 {
     width: 33.33333333%;
@@ -556,7 +521,6 @@ section.services .list-services p {
     width: 16vw;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
   section.services .col-lg-4 {
     width: 100%;
@@ -566,7 +530,6 @@ section.services .list-services p {
     width: 40vw;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
   section.services .title h1 {
     text-align: left;
@@ -575,7 +538,6 @@ section.services .list-services p {
     width: 16vw;
   }
 }
-
 @media screen and (min-width: 1200px) {
   section.services .title h1 {
     text-align: left;
@@ -595,11 +557,9 @@ section.skill .title h1 {
   margin-bottom: 5vh;
   text-align: center;
 }
-
 section.skill .skills .skill-title {
   text-align: center;
 }
-
 section.skill .skills .skill-title h1 {
   font-size: 3.5vh;
   font-family: Poppins;
@@ -609,15 +569,12 @@ section.skill .skills .skill-title h1 {
   margin-top: 5vh;
   margin-bottom: 4vh;
 }
-
 section.skill .skills .spacing {
   margin-bottom: 1vh;
 }
-
 section.skill .skills .tools {
   text-align: center;
 }
-
 section.skill .skills .tools a {
   font-family: Quicksand;
   color: white;
@@ -628,17 +585,14 @@ section.skill .skills .tools a {
   border-radius: 1vh;
   margin-right: 1.5vh;
 }
-
 section.skill .skills .tools a.mr-0 {
   margin-right: 0vh;
 }
-
 @media screen and (max-width: 575px) and (max-height: 991px) and (orientation: portrait) {
   section.skill .skills .spacing {
     margin-bottom: 2vh;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
   section.skill .title h1 {
     text-align: left;
@@ -650,7 +604,6 @@ section.skill .skills .tools a.mr-0 {
     margin-bottom: 1vh;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
   section.skill .col-sm-4 {
     width: 100%;
@@ -659,7 +612,6 @@ section.skill .skills .tools a.mr-0 {
     margin-bottom: 2.5vh;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
   section.skill .col-md-12 {
     width: 33.33333333%;
@@ -674,13 +626,11 @@ section.skill .skills .tools a.mr-0 {
     margin-bottom: 2vh;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
   section.skill .skills .spacing {
     margin-bottom: 2.5vh;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
   section.skill .col-lg-4 {
     width: 100%;
@@ -689,7 +639,6 @@ section.skill .skills .tools a.mr-0 {
     margin-bottom: 2.5vh;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
   section.skill .title h1 {
     text-align: left;
@@ -698,7 +647,6 @@ section.skill .skills .tools a.mr-0 {
     font-size: 1.2vw;
   }
 }
-
 @media screen and (min-width: 1200px) {
   section.skill .title h1 {
     text-align: left;
@@ -714,28 +662,29 @@ section.websites .title h1 {
   margin-bottom: 12vh;
   margin-top: 20vh;
 }
-
+section.websites .title h1 button {
+  background: none;
+  border: none;
+}
+section.websites .title h1 button i {
+  color: white;
+}
 section.websites .website-title {
   margin-bottom: 10vh;
 }
-
 section.websites .website-title h1 {
   font-size: 7.5vh;
 }
-
 section.websites .website-title h1 a {
   transition: 0.3s ease-in-out;
 }
-
 section.websites .website-title h1 a:hover {
-  color: #9c9c9c;
+  color: rgb(156, 156, 156);
 }
-
 section.websites .website-title h1 .releaseDate p {
   font-size: 2.3vh;
   padding-top: 1vh;
 }
-
 section.websites .website-title h1 .progLang a.prog-lang {
   font-family: Quicksand;
   color: white;
@@ -746,16 +695,13 @@ section.websites .website-title h1 .progLang a.prog-lang {
   border-radius: 1vh;
   margin-right: 1.5vh;
 }
-
 section.websites .modal .modal-dialog .modal-content {
   background-color: black;
   border: 1px solid white;
 }
-
 section.websites .modal .modal-dialog .modal-header {
   border: none;
 }
-
 section.websites .modal .modal-dialog .modal-header button {
   border: none;
   background-color: transparent;
@@ -763,67 +709,99 @@ section.websites .modal .modal-dialog .modal-header button {
   height: 5vh;
   font-size: 4vh;
 }
-
+section.websites .modal .modal-dialog .modal-header h1 {
+  font-size: 5vh;
+  margin: 0;
+  padding: 2vh;
+}
 section.websites .modal .modal-dialog .modal-body h1 {
   font-size: 6vh;
   margin: 0;
 }
-
 section.websites .modal .modal-dialog .modal-body p.relDate {
   padding: 0;
   font-size: 2vh;
 }
-
 section.websites .modal .modal-dialog .modal-body p.content {
   font-size: 2.4vh;
   line-height: 4.5vh;
 }
-
 section.websites .modal .modal-dialog .modal-body img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 50vh;
 }
-
+section.websites .modal .modal-dialog .modal-body .projects {
+  padding: 4vh;
+  padding-top: 2vh;
+  padding-bottom: 2vh;
+}
+section.websites .modal .modal-dialog .modal-body .projects .projCard {
+  padding: 4vh;
+  border: 1px solid white;
+}
+section.websites .modal .modal-dialog .modal-body .projects .projCard .details h2 {
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  font-size: 4vh;
+}
+section.websites .modal .modal-dialog .modal-body .projects .projCard .details p {
+  font-size: 2.5vh;
+  margin: 0;
+}
+section.websites .modal .modal-dialog .modal-body .projects .projCard .details h3 {
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  font-size: 2.8vh;
+}
+@media screen and (max-width: 575px) {
+  section.websites .modal .modal-dialog .modal-body .projects .projCard .details {
+    margin-bottom: 3vh;
+  }
+}
+section.websites .modal .modal-dialog .modal-body .projects .projCard .prgsbar {
+  height: 15vh;
+  width: 15vh;
+  margin: auto;
+  padding: 0;
+}
 section.websites .modal .modal-dialog .modal-footer button {
   background: none;
   border: 1px solid white;
 }
-
 section.websites .images {
   margin-bottom: 10vh;
 }
-
 section.websites .images img {
   width: 100vh;
   height: 75vh;
   float: right;
 }
-
 section.websites .images.e-calc img {
   height: 45vh;
   float: right;
 }
-
 section.websites .images.team-gen img {
   height: 60vh;
   float: right;
 }
-
 section.websites .images-sub, section.websites .images-tab {
   display: none;
 }
-
 section.websites .website-title-sub, section.websites .website-title-tab {
   display: none;
 }
-
 @media screen and (max-width: 575px) {
   section.websites .title h1 {
     margin-top: 16vh;
     margin-bottom: 8vh;
     text-align: center;
+  }
+  section.websites .modal .modal-dialog .modal-body .projects .projCard .details {
+    margin-bottom: 3vh;
   }
   section.websites .website-title {
     margin-bottom: 0;
@@ -899,7 +877,6 @@ section.websites .website-title-sub, section.websites .website-title-tab {
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
   section.websites .images img {
     width: 90vh;
@@ -916,8 +893,10 @@ section.websites .website-title-sub, section.websites .website-title-tab {
     font-size: 3vh;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
+  section.websites .col-sm-4 {
+    width: 100%;
+  }
   section.websites .title h1 {
     margin-top: 16vh;
     margin-bottom: 8vh;
@@ -988,13 +967,15 @@ section.websites .website-title-sub, section.websites .website-title-tab {
     height: 38vh;
     margin-bottom: 5vh;
   }
+  section.websites .modal .modal-dialog .modal-body .projects .projCard .details {
+    margin-bottom: 3vh;
+  }
   section.websites .modal .modal-dialog .modal-footer .buttons {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
   section.websites .title h1 {
     margin-top: 16vh;
@@ -1066,14 +1047,19 @@ section.websites .website-title-sub, section.websites .website-title-tab {
     height: 38vh;
     margin-bottom: 5vh;
   }
+  section.websites .modal .modal-dialog .modal-body .projects .projCard .details {
+    margin-bottom: 3vh;
+  }
   section.websites .modal .modal-dialog .modal-footer .buttons {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
+  section.websites .col-md-12 {
+    width: 33.33333333%;
+  }
   section.websites .modal .modal-dialog .modal-body h1 {
     text-align: center;
     margin-top: 3vh;
@@ -1084,14 +1070,19 @@ section.websites .website-title-sub, section.websites .website-title-tab {
   section.websites .modal .modal-dialog .modal-body p.content {
     text-align: center;
   }
+  section.websites .modal .modal-dialog .modal-body .projects .projCard .details {
+    margin-bottom: 3vh;
+  }
   section.websites .modal .modal-dialog .modal-footer .buttons {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
+  section.websites .col-lg-4 {
+    width: 100%;
+  }
   section.websites .title h1 {
     margin-top: 16vh;
     margin-bottom: 8vh;
@@ -1162,13 +1153,15 @@ section.websites .website-title-sub, section.websites .website-title-tab {
     height: 38vh;
     margin-bottom: 5vh;
   }
+  section.websites .modal .modal-dialog .modal-body .projects .projCard .details {
+    margin-bottom: 3vh;
+  }
   section.websites .modal .modal-dialog .modal-footer .buttons {
     display: block;
     margin-left: auto;
     margin-right: auto;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
   section.websites .website-title h1 {
     font-size: 4.5vw;
@@ -1181,7 +1174,6 @@ section.websites .website-title-sub, section.websites .website-title-tab {
     height: 32vh;
   }
 }
-
 @media screen and (min-width: 1200px) {
   section.websites ::-webkit-scrollbar {
     width: 10px;
@@ -1209,6 +1201,32 @@ section.websites .website-title-sub, section.websites .website-title-tab {
   }
 }
 
+section.wrkngproj .title h1 {
+  font-family: Poppins;
+  font-weight: bold;
+  font-size: 5vh;
+  color: white;
+  margin-top: 10vh;
+  margin-bottom: 12vh;
+  margin-top: 20vh;
+  margin-bottom: 8vh;
+}
+section.wrkngproj .projects {
+  padding: 4vh;
+}
+section.wrkngproj .projects .projCard {
+  padding: 5vh;
+  border: 1px solid white;
+}
+section.wrkngproj .projects .projCard h2 {
+  font-family: Poppins;
+  color: white;
+  font-weight: bold;
+  font-size: 4vh;
+}
+section.wrkngproj .projects .projCard p {
+  font-size: 2.5vh;
+}
 section.experience .title h1 {
   font-family: Poppins;
   font-weight: bold;
@@ -1218,37 +1236,29 @@ section.experience .title h1 {
   margin-bottom: 12vh;
   text-align: center;
 }
-
 section.experience .exp .exp-date {
   margin-bottom: 4vh;
 }
-
 section.experience .exp .exp-date p {
   font-size: 2.5vh;
 }
-
 section.experience .exp .exp-place {
   margin-bottom: 7vh;
 }
-
 section.experience .exp .exp-place h1 {
   font-size: 3.5vh;
   margin-bottom: 1.5vh;
 }
-
 section.experience .exp .exp-place .exp-place-content {
   margin-bottom: 2.5vh;
 }
-
 section.experience .exp .exp-place .exp-place-content p {
   font-size: 2.3vh;
   margin: 0;
 }
-
 section.experience .exp .exp-place .cert {
   margin-top: 2vh;
 }
-
 section.experience .exp .exp-place .cert button {
   padding: 2vh;
   color: white;
@@ -1258,16 +1268,13 @@ section.experience .exp .exp-place .cert button {
   font-family: Quicksand;
   font-weight: bold;
 }
-
 section.experience .exp .exp-place .cert .modal .modal-dialog .modal-content {
   background-color: black;
   border: 1px solid white;
 }
-
 section.experience .exp .exp-place .cert .modal .modal-dialog .modal-header {
   border: none;
 }
-
 section.experience .exp .exp-place .cert .modal .modal-dialog .modal-header button {
   border: none;
   background-color: transparent;
@@ -1276,23 +1283,19 @@ section.experience .exp .exp-place .cert .modal .modal-dialog .modal-header butt
   font-size: 3vh;
   transition: 0.2s all ease-in-out;
 }
-
 section.experience .exp .exp-place .cert .modal .modal-dialog .modal-header button:hover {
-  color: #d4d1d1;
+  color: rgb(212, 209, 209);
 }
-
 section.experience .exp .exp-place .cert .modal .modal-dialog .modal-body h1 {
   font-size: 6vh;
   margin: 0;
 }
-
 section.experience .exp .exp-place .cert .modal .modal-dialog .modal-body img {
   display: block;
   margin-left: auto;
   margin-right: auto;
   height: 60vh;
 }
-
 section.experience .exp .exp-place .cert .modal .modal-dialog .modal-footer a {
   background: none;
   border: 1px solid white;
@@ -1305,12 +1308,10 @@ section.experience .exp .exp-place .cert .modal .modal-dialog .modal-footer a {
   font-size: 2vh;
   transition: 0.2s all ease-in-out;
 }
-
 section.experience .exp .exp-place .cert .modal .modal-dialog .modal-footer a:hover {
   color: black;
   background-color: white;
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
   section.experience .title h1 {
     text-align: left;
@@ -1325,7 +1326,6 @@ section.experience .exp .exp-place .cert .modal .modal-dialog .modal-footer a:ho
     font-size: 3vh;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
   section.experience .col-sm-6 {
     width: 100%;
@@ -1337,7 +1337,6 @@ section.experience .exp .exp-place .cert .modal .modal-dialog .modal-footer a:ho
     font-size: 3.3vw;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: portrait) {
   section.experience .exp p.exp-date {
     font-size: 3.6vw;
@@ -1346,7 +1345,6 @@ section.experience .exp .exp-place .cert .modal .modal-dialog .modal-footer a:ho
     font-size: 3.3vw;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
   section.experience .title h1 {
     text-align: left;
@@ -1364,7 +1362,6 @@ section.experience .exp .exp-place .cert .modal .modal-dialog .modal-footer a:ho
     font-size: 3vh;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
   section.experience .col-lg-6 {
     width: 100%;
@@ -1376,7 +1373,6 @@ section.experience .exp .exp-place .cert .modal .modal-dialog .modal-footer a:ho
     font-size: 3vw;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
   section.experience .title h1 {
     text-align: left;
@@ -1388,7 +1384,6 @@ section.experience .exp .exp-place .cert .modal .modal-dialog .modal-footer a:ho
     font-size: 2vw;
   }
 }
-
 @media screen and (min-width: 1200px) {
   section.experience .title h1 {
     text-align: left;
@@ -1411,7 +1406,6 @@ section.contact-us .title h1 {
   margin-bottom: 12vh;
   margin-top: 10vh;
 }
-
 section.contact-us .form p {
   font-family: Poppins;
   font-size: 2.5vh;
@@ -1419,7 +1413,6 @@ section.contact-us .form p {
   margin-bottom: 0.5vh;
   font-weight: 500;
 }
-
 section.contact-us .form input {
   border: none;
   border: 1px solid white;
@@ -1429,17 +1422,14 @@ section.contact-us .form input {
   color: white;
   font-family: Poppins;
 }
-
 section.contact-us .form input:focus {
   outline: none;
 }
-
 section.contact-us .form input::placeholder {
   text-align: right;
   color: red;
   font-size: 1.7vh;
 }
-
 section.contact-us .form textarea {
   border: none;
   border: 1px solid white;
@@ -1451,7 +1441,6 @@ section.contact-us .form textarea {
   height: 26vh;
   resize: none;
 }
-
 section.contact-us .form button {
   padding: 2vh;
   color: white;
@@ -1462,13 +1451,11 @@ section.contact-us .form button {
   font-weight: bold;
   margin-top: 2vh;
 }
-
 section.contact-us .form span {
   font-family: Quicksand;
-  color: #f14c4c;
+  color: rgb(241, 76, 76);
   font-size: 2vh;
 }
-
 section.contact-us .image img {
   height: 80vh;
   margin-top: 40vh;
@@ -1476,7 +1463,6 @@ section.contact-us .image img {
   margin-left: auto;
   margin-right: auto;
 }
-
 @media screen and (max-width: 575px) {
   section.contact-us .title h1 {
     text-align: center;
@@ -1501,7 +1487,6 @@ section.contact-us .image img {
     display: none;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: landscape) {
   section.contact-us .form input, section.contact-us .form textarea {
     width: 100%;
@@ -1514,7 +1499,6 @@ section.contact-us .image img {
     height: 80vh;
   }
 }
-
 @media screen and (min-width: 576px) and (max-width: 767px) and (orientation: portrait) {
   section.contact-us .col-sm-6 {
     width: 100%;
@@ -1538,7 +1522,6 @@ section.contact-us .image img {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) {
   section.contact-us .title h1 {
     margin-top: 16vh;
@@ -1565,7 +1548,6 @@ section.contact-us .image img {
     display: none;
   }
 }
-
 @media screen and (min-width: 768px) and (max-width: 991px) and (orientation: landscape) {
   section.contact-us .col-md-12 {
     width: 50%;
@@ -1591,13 +1573,11 @@ section.contact-us .image img {
     margin-top: 10vh;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
   section.contact-us .image {
     display: none;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: portrait) {
   section.contact-us .col-lg-5 {
     width: 100%;
@@ -1623,7 +1603,6 @@ section.contact-us .image img {
     margin: auto;
   }
 }
-
 @media screen and (min-width: 992px) and (max-width: 1199px) and (orientation: landscape) {
   section.contact-us .form button.send {
     font-size: 3vh;
@@ -1636,7 +1615,6 @@ section.contact-us .image img {
     height: 70vh;
   }
 }
-
 @media screen and (min-width: 1200px) {
   section.contact-us .image img {
     margin-top: 20vh;
@@ -1646,11 +1624,9 @@ section.contact-us .image img {
 footer {
   margin-top: 20vh;
 }
-
 footer .row {
   border-top: 1px solid white;
 }
-
 footer .row .copyright p {
   font-family: Quicksand;
   color: white;
@@ -1658,7 +1634,6 @@ footer .row .copyright p {
   font-size: 1.5vh;
   padding-top: 2vh;
 }
-
 footer .row .version a {
   font-family: Quicksand;
   color: white;
@@ -1668,20 +1643,16 @@ footer .row .version a {
   float: right;
   transition: 0.3s ease-in-out;
 }
-
 footer .row .version a:hover {
-  color: #9c9c9c;
+  color: rgb(156, 156, 156);
 }
-
 footer .row .version .modal .modal-dialog .modal-content {
   background-color: black;
   border: 1px solid white;
 }
-
 footer .row .version .modal .modal-dialog .modal-header h1 {
   font-size: 5vh;
 }
-
 footer .row .version .modal .modal-dialog .modal-header button {
   border: none;
   background-color: transparent;
@@ -1689,27 +1660,23 @@ footer .row .version .modal .modal-dialog .modal-header button {
   height: 5vh;
   font-size: 3vh;
 }
-
 footer .row .version .modal .modal-dialog .modal-body .row {
   border: none;
   margin-top: 3vh;
   margin-bottom: 3vh;
 }
-
 footer .row .version .modal .modal-dialog .modal-body .row h2 {
   font-family: Poppins;
   color: white;
   font-weight: bold;
   font-size: 4vh;
 }
-
 footer .row .version .modal .modal-dialog .modal-body .row h3 {
   font-family: Poppins;
   color: white;
   font-weight: bold;
   font-size: 2.5vh;
 }
-
 footer .row .version .modal .modal-dialog .modal-body .row h3 span {
   font-family: Quicksand;
   color: white;

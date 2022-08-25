@@ -37,6 +37,8 @@ const Skills = () => {
                             </div>
                             <div className='col-12'>
                                 <p>
+                                    <ProgLang tools="Redux"/>
+                                    <ProgLang tools="NextJS"/>
                                     <ProgLang tools="Typescript" class="mr-0"/>
                                 </p>
                             </div>

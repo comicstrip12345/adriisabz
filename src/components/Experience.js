@@ -4,18 +4,18 @@ import ExperienceList from './ExperienceList'
 
 const Experience = () => {
     return (
-        <section className="experience" id='scrollspyExperiences'>
+        <section className="experience" id='scrollspyEducation'>
             <div className="container">
                 <div className="row">
                     <div data-aos="fade-right" className="col-12 title">
-                        <h1>Coding Experience</h1>
+                        <h1>Education</h1>
                     </div>
                     <ExperienceList
                         name="KodeGo"
                         timeline="Feb. 2022 - May 2022"
                         position="Trainee"
                         specialization="Front-end Web Developer"
-                        industry="Computer Systems Design and Related Services"
+                        industry="Information Technology"
                         modalID="#kodeGoCert"
                         description={<Fragment>
                             <p>- Incorporate the HTML Design into HTML file.</p>
@@ -49,7 +49,7 @@ const Experience = () => {
                         timeline="Dec. 2021 - Jan. 2022"
                         position="Trainee"
                         specialization="Front-end Web Developer"
-                        industry="Computer Systems Design and Related Services"
+                        industry="Information Technology"
                         modalID="#tesdaCert"
                         description={<Fragment>
                             <p>
@@ -71,16 +71,32 @@ const Experience = () => {
                             link="https://drive.google.com/file/d/1vKd_9Jtk8n3DpbUPEuxlmaB5maa0EFdm/view?usp=sharing"
                         />
                     </ExperienceList>
-                    <div data-aos="fade-right" className="col-12 title">
+                    <div data-aos="fade-right" className="col-12 title" id='scrollspyExperiences'>
                         <h1>Work Experience</h1>
                     </div>
                     <ExperienceList
+                        name="Collabera Philippines"
+                        timeline="September 2022 - Present"
+                        position="ReactJS Engineer"
+                        specialization="Web Development"
+                        industry="Information Technology"
+                        description={<Fragment>
+                            <p>- Focuses on developing and implementing software programs</p>
+                            <p>
+                                - Work closely with the Solutions Architect to translate design principles into code.
+                            </p>
+                            <p>
+                                - work with programming tasks like design patterns and data structures and may also handle tasks like control flaws and unit testing.
+                            </p>
+                        </Fragment>}
+                    >
+                    </ExperienceList>
+                    <ExperienceList
                         name="Aircraft Engineering and Consultancy Ltd."
-                        timeline="January. 2022 - October 2022"
+                        timeline="January 2020 - October 2020"
                         position="Intern"
                         specialization="Aircraft Technical Records"
                         industry="Aviation"
-                        modalID="#kodeGoCert"
                         description={<Fragment>
                             <p>- Organization and safekeeping of all aircraft technical records</p>
                             <p>
