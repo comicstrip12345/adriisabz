@@ -1,5 +1,10 @@
+# adriisabz v.2.2.3.1
+**Released Date:** September 3, 2022 \
+**Author:** Adriano Sabanal Jr. \
+**Details:** Added 2 Pending Projects in Pending Projects Modal.
+
 # adriisabz v.2.2.3
-**Released Date:** August 19, 2022 \
+**Released Date:** August 25, 2022 \
 **Author:** Adriano Sabanal Jr. \
 **Details:** \
 **1.** Added Working Projects Modal beside 'Websites' Title.\

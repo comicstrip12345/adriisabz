@@ -33,12 +33,28 @@ const ModalWorkProj = ({id,img,link}) => {
                             />
                             <WorkingProjectsCard
                                 projTitle='driiPark'
-                                projDesc='driiPark is an online Parking App made in ReactJS, Redux, and Typescript.'
+                                projDesc='driiPark is an online Parking App made in ReactJS, Redux, and TypeScript.'
                                 penDetails={<Fragment>
                                     <p>- designing an application</p>
                                     <p>- build and test functionalities</p>
                                 </Fragment>}
                                 percent={10}
+                            />
+                            <WorkingProjectsCard
+                                projTitle='driiMarket'
+                                projDesc='driiMarket is an app for market owners who wants to manage their products and respective prices, and to help cashiers for payment process and produce receipts. This app will be made by ReactJS, NextJS, TypeScript, Redux, Express JS, and mySQL.'
+                                penDetails={<Fragment>
+                                    <p>- designing an application</p>
+                                </Fragment>}
+                                percent={5}
+                            />
+                            <WorkingProjectsCard
+                                projTitle='driiFood'
+                                projDesc='driiFood is an app for restaurant owners who wantS to manage their consumable products and their prices, and to help cashiers for payment process and produce receipts. This app will be made by ReactJS, NextJS, TypeScript, Redux, Express JS, and mySQL.'
+                                penDetails={<Fragment>
+                                    <p>- designing an application</p>
+                                </Fragment>}
+                                percent={5}
                             />
                         </div>
                     </div>

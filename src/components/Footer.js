@@ -10,7 +10,7 @@ const Footer = () => {
                         <p>&copy; 2022 adriisabz. All right reserved</p>
                     </div>
                     <div className='col-6 version'>
-                        <a href='/#' type="button" data-bs-toggle="modal" data-bs-target="#version">v.2.2.3</a>
+                        <a href='/#' type="button" data-bs-toggle="modal" data-bs-target="#version">v.2.2.3.1</a>
                         <ModalVersion 
                             id="version"
                         />

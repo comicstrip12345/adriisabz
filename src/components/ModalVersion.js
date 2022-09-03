@@ -12,8 +12,14 @@ const ModalVersion = (props) => {
                     </div>
                     <div className="modal-body">
                         <VersionList
+                            ver="v.2.2.3.1"
+                            relDate="September 3, 2022"
+                            author="Adriano Sabanal Jr."
+                            details='Added 2 Pending Projects in Pending Projects Modal.'
+                        />
+                        <VersionList
                             ver="v.2.2.3"
-                            relDate="August 19, 2022"
+                            relDate="August 25, 2022"
                             author="Adriano Sabanal Jr."
                             details={<Fragment>
                                 <strong>1. </strong>Added Working Projects Modal beside "Websites" Title.<br/>
